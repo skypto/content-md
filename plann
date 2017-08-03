@@ -1,6 +1,3 @@
-task tomorrow -
-	compare this to odin project's repo
-
 organize somehow by subject
 	gitflow
 		1. local
@@ -101,7 +98,3 @@ organize somehow by subject
 		3. bst-recursion
 		8. complexity is counting
 		12. algorithm resources
-
-missing
-	api's to experiment with
-	

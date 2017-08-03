@@ -1,0 +1,16 @@
+	tools - bloated
+		1. cli
+		1. linters
+		2. chromdev
+		4. npm
+		4. webpack/babel/task runners 0
+		5. postman
+		6. mongoose 1
+		7. passport local
+		7. passport jwt
+		7. mongoose.populate
+		8. axios
+		8. testing frameworks
+		8. local modules
+		9. lodash
+		10. webpack 2
