@@ -1,0 +1,1 @@
+first part of 2 day sql/relational lesson

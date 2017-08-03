@@ -1,0 +1,1 @@
+a guide to finding projects and being helpful

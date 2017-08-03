@@ -2,5 +2,5 @@
 		1. unit tests
 		5. sprints, tests, tddish
 		8. api testing
-		8. frontend testing
-		8. using/choosing frameworks
+
+anything else?
