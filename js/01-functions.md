@@ -20,9 +20,9 @@ We will be looking at Test Driven Development in week 6.
 This series of exercises is simply an introduction to what tests are.
 
 * Unit Tests:
- * args: the function to test
- * returns: an informative message
- * behavior: unit tests will take in a function to test, run the function with predetermined arguments and tell you whether the function did the right thing or not
+  * args: the function to test
+  * returns: an informative message
+  * behavior: unit tests will take in a function to test, run the function with predetermined arguments and tell you whether the function did the right thing or not
 
 
 * A very simple unit test for addition
