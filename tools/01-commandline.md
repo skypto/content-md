@@ -18,7 +18,7 @@ To be able to navigate your terminal, you'll need to know some basic commands:
 > There's no similar command in Windows, but you can use `echo`.
 > For example: `echo Hello World! > test.txt` will create a test.txt file with "Hello World!" as content.
 * rmdir (Remove Directory): Will remove the directory
-> Be careful while using this command. The terminal does **not** ask for confirmation, not does it place it in the Recycle Bin. Once deleted it's gone forever.
+> Be careful while using this command. The terminal does **not** ask for confirmation, nor does it place it in the Recycle Bin. Once deleted it's gone forever.
 > You'll get an error if the directory is not empty. In that case use: `rmdir -rf`
 * rm (remove): remove files
 > The same warning applies here as for rmdir. To be safe, always use rm with the -i flag. This will prompt you for confimation before deleting the file.
