@@ -25,8 +25,9 @@ This series of exercises is simply an introduction to what tests are.
   * behavior: unit tests will take in a function to test, run the function with predetermined arguments and tell you whether the function did the right thing or not
 
 
-* A very simple unit test for addition
-    function additionTester(testee) {
+> A very simple unit test for addition
+
+      function additionTester(testee) {
         var tested = testee(4, 5);
         var message = '';
         if (tested == 9) {
@@ -35,7 +36,7 @@ This series of exercises is simply an introduction to what tests are.
             message = 'failure';
         };
         return message;
-    }
+      }
 
 
 Writing specs for functions
