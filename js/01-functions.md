@@ -7,19 +7,22 @@ What are functions?
 Functions let us have re-usable chunks of code. Consider functions as code that is grouped together and can run upon calling.
 
     function compare(x,y){
-    if(x > y){
+      if(x > y){
         return(x + "is bigger than " + y)
-    }else if(x < y){
+      }else if(x < y){
         return(x + "is lesser than " + y)  
-    }else{
+      }else{
         return("well well, we have equals here!")
+      }
     }
-    }
 
 
-And that is how i call the function: `compare(3,5)  // 3 is lesser than 5`.
+And this is how I call the function: `compare(3,5)  // 3 is lesser than 5`.
 
-You can find a great comprehensive introduction into functions [here] (http://javascript.info/function-basics).
+You can find a great comprehensive introduction into functions [here](http://javascript.info/function-basics).
+
+Try the following exercises:
++ clone **day2_arrays_and_functions** from [this repo](https://github.com/Turfie/Elium-exercises/tree/master/week%201)
 
 Minimal Passing Functions and Unit Tests
 -------
