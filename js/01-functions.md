@@ -58,8 +58,31 @@ This series of exercises is simply an introduction to what tests are.
         return message;
       }
 
+> ### Exercises
+> Go over [this list](https://github.com/jankeLearning/content-code/Week 1/Functions/Simplest Passing Functions) of exercises in Content-Code: Read, modify and run the code.
 
 Writing specs for functions
 -------
+Writing specs for functions is planning your functions by writing them out in plain English or pseudocode. As seen above in the Unit Test example, the spec should always _specify_ three things:
 
++ The arguments you're planning to give to your function.
++ The result you're expecting the function to return
++ How you expect the function to _behave_: what does the function do with the arguments and how will it be returned
+
+> Here you have a simple example
+
+    function butcher(cow) {
+	    var food = cow.weight * .43; 
+	    var message = 'deceased at ' + cow.age + ' years of age';
+	    return [food, message];
+    }
+
+butcher: function
+ + args: 1
+    + cow: a cow object
+ + return: array containing two values
+    + food: the amount of food yeilded from this cow
+    + message: a polite message commemorating the cow's life
+ + behavior: calculates the amount of yield from the given cow and constructs a polite message
+ 
 
