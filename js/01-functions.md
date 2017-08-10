@@ -27,7 +27,8 @@ You can find a great comprehensive introduction into functions [here](http://jav
 By now you've have probably noticed that there are different ways to write functions. There are three distinct ways of writing functions that you'll encounter in your programming career: _function declarations_, _function expressions_ and _arrow functions_.
 
 + **Function Declaration**
-A function declaration is _declared_ as a separate statement in the main code flow. Its syntax will look this:
+
+ A function declaration is _declared_ as a separate statement in the main code flow. Its syntax will look this:
 
  ```javascript
 function sayHi(name){
@@ -38,7 +39,8 @@ function sayHi(name){
  You declare a function by its keyword (_function_) followed by a name and the arguments it will take.
 
 + **Function expression**
-Here you'll explicitly assign a function to a variable, just like any other value. It will look something like this:
+
+ Here you'll explicitly assign a function to a variable, just like any other value. It will look something like this:
 
  ```javascript
 var sayHi = function(name){
@@ -49,7 +51,8 @@ var sayHi = function(name){
  Here you create the function and assign it to a variable.
 
 + **Function declaration vs Function expression**
-So what's the difference you ask? In most cases they can be used interchangeably. Both functions are called the exact same way: `sayHi("Evan") // will return "Hi Evan! `.
+
+ So what's the difference you ask? In most cases they can be used interchangeably. Both functions are called the exact same way: `sayHi("Evan") // will return "Hi Evan! `.
 
  So why have two different ways of writing functions? There is one important difference and that has to do with _when_ the function is created by the JavaScript engine.
 
@@ -76,7 +79,8 @@ So what's the difference you ask? In most cases they can be used interchangeably
  A Function Expression however, works as any other value assignment and will only be created when it's _reached_. That's why you can call a function created as a Function Declaration everywhere in your script, even before the JS engine has reached the declaration in your script.
 
 + **ES6: Arrow functions**
-Once you progress in this course, you will also get familiar with a third kind of function: **the arrow function**. This is a ES6 (EcmaScript 2015) command and may not be supported in every browser.
+
+ Once you progress in this course, you will also get familiar with a third kind of function: **the arrow function**. This is a ES6 (EcmaScript 2015) command and may not be supported in every browser.
 
  An arrow Function will look like this: `let SayHi = (name) => {return "Hi " + name + "!"}`.
 
@@ -116,17 +120,18 @@ This series of exercises is simply an introduction to what tests are.
 
 
 > A very simple unit test for addition
-
-      function additionTester(testee) {
-        var tested = testee(4, 5);
-        var message = '';
-        if (tested == 9) {
-            message = 'success';
-        } else {
-            message = 'failure';
-        };
-        return message;
-      }
+```javascript
+  function additionTester(testee) {
+    var tested = testee(4, 5);
+    var message = '';
+    if (tested == 9) {
+        message = 'success';
+    } else {
+        message = 'failure';
+    };
+    return message;
+  }
+```
 
 > ### Exercises
 > Go over [this list](https://github.com/jankeLearning/content-code/Week 1/Functions/Simplest Passing Functions) of exercises in Content-Code: Read, modify and run the code.
@@ -140,12 +145,13 @@ Writing specs for functions is planning your functions by writing them out in pl
 + How you expect the function to _behave_: what does the function do with the arguments and how will it be returned
 
 > Here you have a simple example
-
+```javascript
     function butcher(cow) {
 	    var food = cow.weight * .43; 
 	    var message = 'deceased at ' + cow.age + ' years of age';
 	    return [food, message];
     }
+```
 
 butcher: function
  + args: 1
