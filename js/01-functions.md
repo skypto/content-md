@@ -86,8 +86,8 @@ var sayHi = function(name){
 
  An Arrow Function is a shorter way of writing Function Expressions. It simply takes the arguments between parentheses, followed by an arrow (hence the name) and a return statement
 
- > In fact you can even write this function even more concise: `let sayHi = (name) => "Hi " + name + "!"`
- > You can leave out the curly braces and return keyword if you only want to return something.
+ > In fact you can write this function even more concise: `let sayHi = (name) => "Hi " + name + "!"`
+ > You can leave out the curly braces and the return keyword if you only want to return something.
 
  > If there are no arguments, you just use empty parentheses: `let printHelloWorld = () => "Hello World!"`
 
