@@ -51,7 +51,7 @@ To react the value of an object we can use the name of the object and its key, s
 
 For example: person.age will return 29.
 
-You can also _chain_ dot notations to react deeper nested values.
+You can also _chain_ dot notations to reach deeper nested values.
 
 Let's say we had written our object like this:
 
@@ -84,7 +84,7 @@ person['name']
 > Chaining bracket notations is similar to dot notations: `person['name']['last']`.
 
 ### When to use bracket notations instead of dot notations?
-When the _key_ is a variable you have to use brackets.
+When the _key_ is a variable, you'll have to use brackets.
 
 For example:
 
@@ -149,4 +149,4 @@ Exercises
 ----
 
 + clone the objects folder from this repo: https://github.com/Turfie/Elium-exercises/tree/master/week%201
-+ Go over [this bank account example](https://github.com/jankeLearning/content-code/Week 1/Objects). Go only to the next one once you understand what each script does.
++ Go over [bank account example](https://github.com/jankeLearning/content-code/Week%1/Objects). Go only to the next one once you understand what each script does.
