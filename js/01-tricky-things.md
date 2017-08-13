@@ -42,7 +42,7 @@ All of the above will evaluate as _true_!
 ```javascript
 var myString = "some string";
 // some code
-if (myString){  // if myString would be '' this would evaluate as false and this code would not run. In any other                 // case the code would run
+if (myString){  // if myString would be '' this would evaluate as false and this code would not run. In any other case the code would run
     // do something
 }
 ```
@@ -50,7 +50,7 @@ if (myString){  // if myString would be '' this would evaluate as false and this
 But the last two examples (the empty array and empty object) are _truthy_ despite being empty, why is that? Both {} and [] are in fact objects and any object will be coerced to a boolean value of true in JavaScript.
 
 ### isNaN(9) is false
-A common mistake is when checking for numbers is using a number as an argument for the "Is **Not** a Number** method. 9 is in effect a number so this will return false. In this case you would need: "Is _not_ **Not** a Number", which you can achieve by putting an exclamation mark before isNaN.
+A common mistake is when checking for numbers is using a number as an argument for the "Is **Not** a Number" method. 9 is in fact a number so this will return false. In this case you would need: "Is _not_ **Not** a Number", which you can achieve by putting an exclamation mark before isNaN.
 
 ### var, let, const and scope
 Since ES6 there are two new ways to declare a variable: let and const. So what's the difference with good old var? 
