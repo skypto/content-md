@@ -134,7 +134,7 @@ This series of exercises is simply an introduction to what tests are.
 ```
 
 > ### Exercises
-> Go over [this list](https://github.com/jankeLearning/content-code/Week 1/Functions/Simplest Passing Functions) of exercises in Content-Code: Read, modify and run the code.
+> Go over [this list](https://github.com/jankeLearning/content-code/simplestPassingFuncs) of exercises in Content-Code: Read, modify and run the code.
 
 Writing specs for functions
 -------
