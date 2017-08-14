@@ -16,12 +16,12 @@ The DOM is a programming API for documents. It is based on an object structure t
       <TABLE>
       <TBODY> 
       <TR> 
-      <TD>Countries</TD>
-      <TD>Capitals</TD> 
+      <TD>Shady Grove</TD>
+      <TD>Aeolian</TD> 
       </TR> 
       <TR>
-      <TD>Belgium</TD>        
-      <TD>Brussels</TD> 
+      <TD>Over the river, Charlie</TD>        
+      <TD>Dorian</TD> 
       </TR> 
       </TBODY>
       </TABLE>
