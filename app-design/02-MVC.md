@@ -9,6 +9,8 @@ Model-View-Controller
 
 As with other software architectures, MVC expresses the "core of the solution" to a problem while allowing it to be adapted for each system. Particular MVC architectures can vary significantly from the traditional description here.
 
+Link to lecture: https://docs.google.com/presentation/d/1DRN0fLdsaxKGuPzvVDqx-7r-HuuzJIALNTOGcLsBp6w/edit#slide=id.g1f5e13c63b_0_7
+
 ### Components
 The _model_ is the central component of the pattern. It expresses the application's behavior in terms of the problem domain, independent of the user interface. It directly manages the data, logic and rules of the application. <br>
 A _view_ can be any output representation of information, such as a chart or a diagram. Multiple views of the same information are possible, such as a bar chart for management and a tabular view for accountants. <br>
