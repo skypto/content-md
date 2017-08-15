@@ -10,15 +10,15 @@ Model-View-Controller
 As with other software architectures, MVC expresses the "core of the solution" to a problem while allowing it to be adapted for each system. Particular MVC architectures can vary significantly from the traditional description here.
 
 ### Components
-The _model_ is the central component of the pattern. It expresses the application's behavior in terms of the problem domain, independent of the user interface. It directly manages the data, logic and rules of the application.
-A _view_ can be any output representation of information, such as a chart or a diagram. Multiple views of the same information are possible, such as a bar chart for management and a tabular view for accountants.
+The _model_ is the central component of the pattern. It expresses the application's behavior in terms of the problem domain, independent of the user interface. It directly manages the data, logic and rules of the application. <br>
+A _view_ can be any output representation of information, such as a chart or a diagram. Multiple views of the same information are possible, such as a bar chart for management and a tabular view for accountants. <br>
 The third part, the _controller_, accepts input and converts it to commands for the model or view.
 
 ### Interactions
 In addition to dividing the application into three kinds of components, the model–view–controller design defines the interactions between them.
 
-A _model_ stores data that is retrieved according to commands from the controller and displayed in the view.
-A _view_ generates new output to the user based on changes in the model.
+A _model_ stores data that is retrieved according to commands from the controller and displayed in the view. <br>
+A _view_ generates new output to the user based on changes in the model. <br>
 A _controller_ can send commands to the model to update the model's state (e.g., editing a document). It can also send commands to its associated view to change the view's presentation of the model (e.g., scrolling through a document, movement of document).
 
 Exercises
