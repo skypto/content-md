@@ -14,7 +14,7 @@ The _model_ is the central component of the pattern. It expresses the applicatio
 A _view_ can be any output representation of information, such as a chart or a diagram. Multiple views of the same information are possible, such as a bar chart for management and a tabular view for accountants.
 The third part, the _controller_, accepts input and converts it to commands for the model or view.
 
-###Interactions
+### Interactions
 In addition to dividing the application into three kinds of components, the model–view–controller design defines the interactions between them.
 
 A _model_ stores data that is retrieved according to commands from the controller and displayed in the view.
