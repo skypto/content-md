@@ -24,4 +24,4 @@ A _controller_ can send commands to the model to update the model's state (e.g.,
 Exercises
 ---
 Rewrite TicTacToe as an MVC app?
-Link to content-code
+Do [here](https://github.com/jankeLearning/content-code/tree/master/Week%202/2-tictapps)
