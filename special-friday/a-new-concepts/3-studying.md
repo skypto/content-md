@@ -33,17 +33,20 @@ ___
 By finding the right answers to the right questions at the right time. 
 This is all around difficult, but especially difficult because you don't know what you don't know!  How can you have answers ready to questions you don't even have yet?
 
+TL;DR - Have a solid list of questions and to keep updating that list as you progress until you manage to achieve your objective.
+
 There is no single solution to this, but there are a few things you can do ahead of time to help your futur self:
 * Clearly define your objectives.
   * This will help you notice when you are straying off-topic.  The further you stray the more content you have to learn, the less unified that content is, and the harder it will be to achieve your goal.
 * Make an initial high-level review of the subject matter.
-  * This will help enourmously with staying on topic.  Before you begin your serious studying, make a drawing/list/table of your subject.  Indicate for yourselves which keywords or topics are important, which are cool, which are irrelevant, ... Having this list will help you
+  * This will help enourmously with staying on topic.  Before you begin your serious studying, make a drawing/list/table of your subject.  Indicate for yourselves which keywords or topics are important, which are cool, which are irrelevant, ... Having this prepared will help you know when you are straying off-topic in your studies.
 * Collect and familiarize yourself good resources ahead of time.
-* Make frequent connections to concepts you already know.
-* 
+  * Finding a few reliable resources will save you a lot of trouble.  Not only won't you have to spend time looking later on, but it will make for a more comprehensive learning experience.  When you stick with a single resource (text book, video series, tutorial) you already know that it will explain things in a way that works for you.  You will also get more from the experience - larger single resources usually make an effort to make connections to past and futur sections.  This is not possible with an adhoc collection of blog posts, stack over flow answers, code snippets, short tutorials, ... what have you.
+* Make frequent connections to concepts you already know - analogies rule.
+  * The easiest way to gain a new skill is to repurpose a talent you already have.  The same goes for ideas.  If you're trying to understand context for example, spend a little extra time to draw up a good analogy or story.  This will help with remembering the material later, and with applying this knowledge in novel ways.
 
 
-Narrow the topics you need to study.
+Once you've laid this groundwork
 Often, in formulating a clear question you will find your answer.
 Analyzing your list of questions, you can see:
 Am I on topic?
@@ -53,14 +56,5 @@ Can I trace those to a common source?
 Automatically building up a study plan for the next days.
 If you do a good job organizing your questions.
 
-why
 
-Everything can be learned
-
-
-
-Because it is the most useful skills you will ever learn.  Think about it:
-What do you have to do to learn anything else?
-Study!
-So learn to study better and you’ll be better at everything.
 
