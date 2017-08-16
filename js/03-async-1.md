@@ -102,13 +102,9 @@ getData(userData, printData);
 Exercises
 ---
 
-Link to Evan's exercises
+Go [here](/content-code/callbacks);
 
 Project
 ---
 
 Click [here](/projects/03-callbacks+data_models/README.md) to go the project.
-
-callbacks (the series)  
-loupe  
-timeout examples
