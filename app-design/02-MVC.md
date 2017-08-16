@@ -27,3 +27,7 @@ Exercises
 ---
 Rewrite TicTacToe as an MVC app?
 Do [here](https://github.com/jankeLearning/content-code/tree/master/Week%202/2-tictapps)
+
+Project
+---
+Battleship?
