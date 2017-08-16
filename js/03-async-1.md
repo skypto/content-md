@@ -102,7 +102,7 @@ getData(userData, printData);
 Exercises
 ---
 
-Go [here](/content-code/callbacks);
+Go [here](https://github.com/jankeLearning/content-code/tree/master/callbacks);
 
 Project
 ---
