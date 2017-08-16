@@ -94,6 +94,8 @@ var myObj = {
 };
 ```
 
+ES6 functions don't work well as methods and and why you need to bind or use es6 functions inside methods
+
 External resources
 ---
 + stackoverflow: https://stackoverflow.com/questions/111102/how-do-javascript-closures-work

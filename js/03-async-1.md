@@ -107,4 +107,4 @@ Go [here](https://github.com/jankeLearning/content-code/tree/master/callbacks);
 Project
 ---
 
-Click [here](/projects/03-callbacks+data_models/README.md) to go the project.
+Click [here](https://github.com/jankeLearning/projects/tree/master/03-callbacks%2Bdata_models) to go the project.
