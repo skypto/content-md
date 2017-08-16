@@ -5,7 +5,7 @@ JavaScript is asynchronous
 ---
 
 ### Synchronous Code
-In synchronous programs, if you have two lines of code (L1 followed by L2), then L2 cannot begin running until L1 has finished executing.
+In _synchronous_ programs, if you have two lines of code (L1 followed by L2), then L2 cannot begin running until L1 has finished executing.
 
 You can imagine this as if you are in a line of people waiting to buy train tickets. You can't begin to buy a train ticket until all the people in front of you have finished buying theirs. Similarly, the people behind you can't start buying their tickets until you have bought yours.
 
@@ -96,10 +96,8 @@ function getData(inputData, callback){
 
 //call the function with the data and the callback function
 getData(userData, printData);
-console.log(db);
-```
 
-Imagine that you want some data (from an API or a user form). You use the getData function, but without a callback. Instead you just write some code to handle the incoming data. Immediately after the function, you'd want to do something with the data you've received (maybe display it). It's possible that the next statement is run before your function has completely executed, which will result in bugs and errors. This is why you need callbacks!
+```
 
 Exercises
 ---
