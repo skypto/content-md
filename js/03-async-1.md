@@ -67,9 +67,17 @@ function myFunction(){
 };
 ```
 
-So when do you use callbacks? Every time when you want to make sure something happens before something else.
+And when you see this code, do you have a better understanding of what it does:
 
-In the example below 
+```javascript
+var arr = [1, 2, 3];
+arr.forEach(function(el){ // Yes, that's a callback function!
+    return el * 2
+})
+```
+
+So how would you go about writing functions that take callback functions as arguments? Let's look at this example:
+
 
 ```javascript
 var db = [];
@@ -98,6 +106,18 @@ function getData(inputData, callback){
 getData(userData, printData);
 
 ```
+
+In the above example you want to make sure the printing of the data only happens **after** you've received the data. That's why you write a function that gets data first and then call a second function that prints the data. This way you're avoiding that JS moves on to next line, without having retrieved all the data.
+
+```javascript
+// without callback. You've defined a function that gets data from an external API
+// you store it in a var
+var data = getData(someURI); // connects to a server, gets the data, processes the data,...
+
+// Immediately afterwards, display the data in your page
+document.getElementById("someDiv").innerHTML = data;
+``` 
+Chances are that in above example the page will remain empty! JS will run the getData function, but may move on to the next line before receiving all the data. That's why you need to wrap this up in a callback!
 
 Exercises
 ---
