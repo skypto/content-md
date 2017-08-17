@@ -1,6 +1,3 @@
-superficial promises for using axios and/or twit module  
-how async effects app design
-
 Async 2: Promises
 ===
 
@@ -16,9 +13,9 @@ What you need to know now is how to handle API's that return a Promise-object. W
 
 For now this is the syntax you need to worry about:
 
-_function (returning a promise)_(_arguments_)._then_(_onfulfill_).catch(_onreject_).
+function(_arguments_).then(_onfulfill_).catch(_onreject_).
 
-1. function returning a promise: this is function that will return a Promise-object, i.e it will have a _onfulfill_ object and (optionally) a _onreject_ object.
+1. function returning a promise: this is a function that will return a Promise-object, i.e it will send a _request_ and receive a _response_ back which will have to be _fulfilled_ .
 2. When the promise has been _fulfilled_ we write code in the _thenable_ what should happen next.
 3. If the promise failed or has been _rejected_, we write code in the _catch_ statement for error handling.
 
@@ -48,7 +45,7 @@ getData(userData)
 getData(userData).then(result => printdata(result)).catch(error => error)  // much neater
 ```
 
-![Promises](https://www.google.be/imgres?imgurl=https://mdn.mozillademos.org/files/8633/promises.png&imgrefurl=https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise&h=297&w=801&tbnid=lU8YHMKZ5uaoLM:&tbnh=78&tbnw=211&usg=__eF1Bbb0o_NOekpMN7DEobYN0VBQ=&vet=10ahUKEwiF89n18N3VAhWNLlAKHa1jCrkQ9QEIKjAA..i&docid=-0TFsZsXOAec5M&sa=X&ved=0ahUKEwiF89n18N3VAhWNLlAKHa1jCrkQ9QEIKjAA)
+<img src="https://www.google.be/imgres?imgurl=https://mdn.mozillademos.org/files/8633/promises.png&imgrefurl=https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise&h=297&w=801&tbnid=lU8YHMKZ5uaoLM:&tbnh=78&tbnw=211&usg=__eF1Bbb0o_NOekpMN7DEobYN0VBQ=&vet=10ahUKEwiF89n18N3VAhWNLlAKHa1jCrkQ9QEIKjAA..i&docid=-0TFsZsXOAec5M&sa=X&ved=0ahUKEwiF89n18N3VAhWNLlAKHa1jCrkQ9QEIKjAA">
 
 ### Promises vs Callbacks
 Unlike old-style passed-in callbacks, a promise comes with some guarantees:
@@ -88,7 +85,7 @@ The Fetch API is a built-in javascript interface for fetching resources (includi
 
 It has a relatively simple syntax and it uses Promises to handle results/callbacks.
 
-The syntax looks like this: _fetch_(_URL_(required), _options_(optional)).then(_response_).catch(_error_).
+The syntax looks like this: fetch(_URL_(required), _options_(optional)).then(_response_).catch(_error_).
 
 So fetch sends a _request_ to an url to retrieve data from, and optionally some options, such as method (GET,POST,...). It will return a _response_ which can be handled in the `then` statement.
 
@@ -106,7 +103,7 @@ fetch("https://randomuser.me/api/")
   .then(data => alert(data.results[0].name.first + " " + data.results[0].name.last))
 ```
 
-Axios is a third-party Promise based HTTP client for the browser and node.js. 
+Axios is a third-party Promise based HTTP client for the browser and node.js. Axios is NOT built-in, so that means we need to import that somehow (more about that in the NPM and module.export sections).
 
 The same code in axios would look like this:
 
