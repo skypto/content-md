@@ -58,6 +58,7 @@ var toggleNav = function () {
 nav.addEventListener('click', toggleNav, false);
 ```
 
+### Caching this
 There are also problems that we run into when dealing with the `this` value, for instance if I do this, even inside the same object the scope can be changed and the this value can be changed:
 
 ```javascript
@@ -94,10 +95,75 @@ var myObj = {
 };
 ```
 
-ES6 functions don't work well as methods and and why you need to bind or use es6 functions inside methods
+Binding "this"
+---
+Function binding is most probably your least concern when beginning with JavaScript, but when you realize that you need a solution to the problem of how to keep the context of `this` within another function, then you might not realize that what you actually need is **Function.prototype.bind()**.
+
+Let's look at below example how `bind()` works:
+
+```javascript
+var x = 9;
+var obj = {
+  x: 81,
+  getX(){
+    console.log(this.x);
+  }
+}
+obj.getX(); // will return 81 => this refers to the local object scope
+var retrieveX = obj.getX;
+retrieveX(); // will return 9 => this refers to global scope
+
+// If we would want to "bind" the context of retrieveX to obj, we could use bind
+var x = 9;
+var obj = {
+  x: 81,
+  getX(){
+    console.log(this.x);
+  }
+}
+obj.getX(); // will return 81
+var retrieveX = obj.getX.bind(obj); // this is now bound to the local object scope
+retrieveX(); // will also return 81
+
+```
+
+Arrow functions have no "this"
+----
+
+Arrow function don't have `this`, if `this` is accessed it's taken from the outside. Which can come in handy at times. Look at the two examples below:
+
+```javascript
+let students = {
+    title: "Elium",
+    list: ["Nisha", "Florian", "George"],
+    showList(){
+        this.list.forEach(function(student){ // creates a new lexical scope
+            //this.title will return undefined
+            console.log(this.title + ": " + student)
+        })
+    }
+}
+
+let students2 = {
+    title: "Elium",
+    list: ["Nisha", "Florian", "George"],
+    showList(){
+        this.list.forEach(student => {
+            // takes this from outer lexicon environment
+            console.log(this.title + ": " + student)
+        })
+    }
+}
+```
+
+
+
+
 
 External resources
 ---
 + stackoverflow: https://stackoverflow.com/questions/111102/how-do-javascript-closures-work
 + W3 schools : https://www.w3schools.com/js/js_function_closures.asp
 + MDN: https://developer.mozilla.org/en/docs/Web/JavaScript/Closures
++ javascript.info: http://javascript.info/arrow-functions
++ bind method: https://stackoverflow.com/questions/2236747/use-of-the-javascript-bind-method
