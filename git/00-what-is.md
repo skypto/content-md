@@ -95,3 +95,5 @@ Some good places to study git:
    https://www.theodinproject.com/courses/web-development-101/lessons/introduction-to-git
 
    https://blog.red-badger.com/blog/2016/11/29/gitgithub-in-plain-english
+
+   https://www.cleverism.com/complete-guide-github/
