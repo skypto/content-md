@@ -1,4 +1,4 @@
-# GH-Pages CV
+# GH-Pages portfolio
 Github Pages allows you to host static sites directly from your GitHub account:  
 You can have one site for your entire profile - http://elium-student.github.io/.  
 Each repository can also have a static site associated with it - https://elium-student.github.io/my-first-repo/, https://elium-student.github.io/perfect-repo/.  

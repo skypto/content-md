@@ -129,3 +129,4 @@ External Resources
 + For dummies: https://scotch.io/tutorials/javascript-promises-for-dummies
 + Fetch API: https://developers.google.com/web/updates/2015/03/introduction-to-fetch
 + Axios: https://github.com/mzabriskie/axios
++ you get the gist: https://gist.github.com/domenic/3889970
