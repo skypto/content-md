@@ -122,7 +122,7 @@ Chances are that in above example the page will remain empty! JS will run the ge
 Exercises
 ---
 
-Go [here](https://github.com/jankeLearning/content-code/tree/master/callbacks);
+Go [here](https://github.com/jankeLearning/content-code/tree/master/Week%2003/callbacks);
 
 Project
 ---

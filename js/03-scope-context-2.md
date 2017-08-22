@@ -162,6 +162,7 @@ let students2 = {
 
 External resources
 ---
++ [code to study](https://github.com/jankeLearning/content-code/tree/master/Week%2003/clousres)
 + stackoverflow: https://stackoverflow.com/questions/111102/how-do-javascript-closures-work
 + W3 schools : https://www.w3schools.com/js/js_function_closures.asp
 + MDN: https://developer.mozilla.org/en/docs/Web/JavaScript/Closures

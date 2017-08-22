@@ -149,4 +149,4 @@ Exercises
 ----
 
 + clone the objects folder from this repo: https://github.com/Turfie/Elium-exercises/tree/master/week%201
-+ Go over [bank account example](https://github.com/jankeLearning/content-code/Week%1/Objects). Go only to the next one once you understand what each script does.
++ Go over [bank account example](https://github.com/jankeLearning/content-code/tree/master/Week%2001/objects). Go only to the next one once you understand what each script does.
