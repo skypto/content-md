@@ -15,3 +15,5 @@ These little mira
 
 ---
 * This lesson is specifically about unix machines.  You can also write shell scripts for Windows machines but I'm not sure how.
+
+* [Interactive search that explains the meaning of any shell command, including git commands](http://explainshell.com)

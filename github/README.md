@@ -16,3 +16,13 @@ fancy growth hacklys
 	landing page - gh-pages, tracking software
 	blog - jekyll + gh-pages
 	organizations - like we did
+
+gists
+pull requests
+issues
+projects
+bolg
+desktop
+documenting
+
+http://opentechschool.github.io/social-coding/
