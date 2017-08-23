@@ -45,3 +45,4 @@ Command line Resources:
 * http://leveluptuts.com/tutorials/command-line-basics
 * Shell i/o redirection: http://linuxcommand.org/lc3_lts0070.php
 * This tutorial site: https://linuxjourney.com/
+* type this in your terminal:  telnet towel.blinkenlights.nl

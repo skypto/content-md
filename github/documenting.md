@@ -34,3 +34,7 @@ there will be several folders within it
 this will also be presented as several lectures
 
 readme, pages, wiki, ...
+
+book-style documentation
+
+documentation isn't you remembering how your code works.  it's you teaching how your code works
