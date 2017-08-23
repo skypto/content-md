@@ -119,6 +119,13 @@ document.getElementById("someDiv").innerHTML = data;
 ``` 
 Chances are that in above example the page will remain empty! JS will run the getData function, but may move on to the next line before receiving all the data. That's why you need to wrap this up in a callback!
 
+Asynchronous JavaScript and XML: AJAX
+----
+
+AJAX is a set of Web development techniques using many Web technologies on the client side to create asynchronous Web applications. With Ajax, Web applications can send data to and retrieve from a server asynchronously (in the background) without interfering with the display and behavior of the existing page. By decoupling the data interchange layer from the presentation layer, Ajax allows for Web pages, and by extension Web applications, to change content dynamically **without the need to reload the entire page**. In practice, modern implementations commonly substitute **JSON** for XML due to the advantages of being native to JavaScript.
+
+AJAX calls are made by using the XMLHttpRequest (XHR) object. This is an API in the form of an object whose methods transfer data between a web browser and a web server. The object is provided by the browser's JavaScript environment. We won't go too deep into this object, if you want to know more you read up about [here](https://www.w3schools.com/xml/dom_httprequest.asp). We will instead focus on so-called Promise-based httpRequest API's such as the more recently built-in API Fetch and third-party modules such as Axios and SuperAgent.
+
 Exercises
 ---
 
