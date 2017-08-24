@@ -130,3 +130,6 @@ External Resources
 + Fetch API: https://developers.google.com/web/updates/2015/03/introduction-to-fetch
 + Axios: https://github.com/mzabriskie/axios
 + you get the gist: https://gist.github.com/domenic/3889970
++ [learning promises](https://colintoh.com/blog/staying-sane-with-asynchronous-programming-promises-and-generators)  
++ a sick [github of examples](https://github.com/vasanthk/async-javascript)  
++ [a library](https://caolan.github.io/async/) to help with async programming.  

@@ -30,3 +30,5 @@ Node Package Manager, or also called NPM, is a library management tool that lets
 Running JS files with node is pretty straightforward. All you have to do is to make sure you're in the same directory as the JS file and run: node _JS file_.
 
 > PS: If you're not sure if node is properly installed, just run node -v in your terminal. This should return the current version of node that's running on your machine. If you get an error, it means node is not installed.
+
++ a nice vide: https://www.youtube.com/watch?v=kEeC2sY1AE8
