@@ -6,3 +6,4 @@ Morgan is a HTTP request logger middleware for node.js. It handles automated log
 External Resources
 ----
 + morgan: https://github.com/expressjs/morgan
++ our example: https://github.com/jankeLearning/content-code/tree/master/Week%2005/morgan

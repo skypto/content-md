@@ -12,6 +12,7 @@ By the end of this week you should be comfortable with these git commands:
 * checkout (-b)
 * remote (add, -v)
 * status (-v)
+* tag
 
 
 
@@ -28,6 +29,7 @@ Study resources:
 * Derek Banas' [introduction videos](https://www.youtube.com/watch?v=r63f51ce84A), if you're into videos.  
 * A little [history](https://www.youtube.com/watch?v=1h9_cB9mPT8&feature=youtu.be&t=13s)
 * Comprehensive [git CheatSheet] from Tiimgreen(https://github.com/tiimgreen/github-cheat-sheet).
+* Learn [git tagging](http://alblue.bandlem.com/2011/04/git-tip-of-week-tags.html).  
 
 
 Practice resources: 
