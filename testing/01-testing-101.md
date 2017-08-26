@@ -41,8 +41,8 @@ If you are careful to build pure functions you only need to specify 3 things to 
 Specs for the division function above.  It's import that everything is spelt the same in your specs and your function:
 * division: function  
   * ARGS: 2  
-    1. a: number  
-    2. b: number or undefined 
+    * a: number  
+    * b: number or undefined 
   * RETURN: number  
   * BEHAVIOR: Divides a by b if b is not 0.  Returns the result or 'undefined', depending on the inputs.
  ---
