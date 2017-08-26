@@ -8,10 +8,11 @@ Underlying all sides of the arguments are a few universal tenants:
 This lesson will cover each of these topics individually than look at how they come together to form a **testing suite**. 
 ***  
 ### PURE FUNCTIONS
-A pure function must meet these 2 criteria: 
+A pure function must meet these 3 criteria: 
 1. The same arguments will ALWAYS produce the same return value.  
 2. It will NEVER modify anything outside of it's lexical scope (ie. defined outside it's curly braces, anything it needs is passed in as an argument).  
-        * With one exception: a method can modify it's object's properties.
+        * With one exception: a method can modify it's object's properties.  
+3. It will return the results of it's logic as a new object/list/number/...  To make use of a pure function you must capture the returned value in a new (or old) variable.  
 
 An important concept for understanding why you use pure functions is __side effects__.  
 * SIDE EFFECT: The modification of variables in one scope by code in a different scope.  
