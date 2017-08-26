@@ -53,7 +53,7 @@ These are the atoms of all testing.  The principle is very simple, coming up wit
 Unit Tests are the simplest possible example of something called a __higher order function__.  Higher order functions are functions that take other functions as arguments.  Let's take a look at some specs to see how this works: 
 * unit_test: function
   * ARGS: 1
-    1. testee: function
+    * testee: function
   * RETURN: boolean
   * BEHAVIOR: Executes testee with a hard-coded set of arguments and compares the returned value against the expected result.  Returns the result of this comparison.
  
