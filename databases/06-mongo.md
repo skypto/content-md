@@ -36,3 +36,8 @@ MongoDb comes installed with the **Mongo Shell**, a terminal-like application th
 Mastering the Mongo Shell is fairly easy. You can find the instructions [here](https://docs.mongodb.com/master/mongo/).
 
 If you'd rather have a more graphical interface, you can install [Robo 3T](https://robomongo.org/), a free lightweight GUI for MongoDB.
+
+External resources
+---
++ MongoDb in 30 min: https://www.youtube.com/watch?v=pWbMrx5rVBE
++ or if you'd rather read: https://code.tutsplus.com/tutorials/getting-started-with-mongodb-part-1--net-22879
