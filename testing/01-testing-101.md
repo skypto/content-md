@@ -8,10 +8,11 @@ Underlying all sides of the arguments are a few universal tenants:
 This lesson will cover each of these topics individually than look at how they come together to form a **testing suite**. 
 ***  
 ### PURE FUNCTIONS
-A pure function must meet these 2 criteria: 
+A pure function must meet these 3 criteria: 
 1. The same arguments will ALWAYS produce the same return value.  
 2. It will NEVER modify anything outside of it's lexical scope (ie. defined outside it's curly braces, anything it needs is passed in as an argument).  
-        * With one exception: a method can modify it's object's properties.
+        * With one exception: a method can modify it's object's properties.  
+3. It will return the results of it's logic as a new object/list/number/...  To make use of a pure function you must capture the returned value in a new (or old) variable.  
 
 An important concept for understanding why you use pure functions is __side effects__.  
 * SIDE EFFECT: The modification of variables in one scope by code in a different scope.  
@@ -40,8 +41,8 @@ If you are careful to build pure functions you only need to specify 3 things to 
 Specs for the division function above.  It's import that everything is spelt the same in your specs and your function:
 * division: function  
   * ARGS: 2  
-    1. a: number  
-    2. b: number or undefined 
+    * a: number  
+    * b: number or undefined 
   * RETURN: number  
   * BEHAVIOR: Divides a by b if b is not 0.  Returns the result or 'undefined', depending on the inputs.
  ---
@@ -52,7 +53,7 @@ These are the atoms of all testing.  The principle is very simple, coming up wit
 Unit Tests are the simplest possible example of something called a __higher order function__.  Higher order functions are functions that take other functions as arguments.  Let's take a look at some specs to see how this works: 
 * unit_test: function
   * ARGS: 1
-    1. testee: function
+    * testee: function
   * RETURN: boolean
   * BEHAVIOR: Executes testee with a hard-coded set of arguments and compares the returned value against the expected result.  Returns the result of this comparison.
  
