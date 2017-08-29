@@ -19,7 +19,7 @@ From a data modeling point of view there are only 3 numbers - 0, 1, and 'many'. 
 * One to Many,  or Many to One:
     * ![](https://github.com/jankeLearning/diagrams/blob/master/data-relations/m-1.png)
 * Many to Many:
-    * ![](https://github.com/jankeLearning/diagrams/blob/master/data-relations/1-1.png)
+    * ![](https://github.com/jankeLearning/diagrams/blob/master/data-relations/m-m.png)
 
 That's about all you need to know to get started.  
 ___
