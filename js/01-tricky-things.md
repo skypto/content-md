@@ -97,3 +97,5 @@ Here you'll find some resources about some more trickier concepts regarding Java
 + https://www.toptal.com/javascript/10-most-common-javascript-mistakes
 
 + https://bonsaiden.github.io/JavaScript-Garden/
+
++ http://www.thatjsdude.com/interview/js2.html

@@ -1,14 +1,23 @@
 # Bundling with Node
 
-This lesson is long, bear with it.  Skip first to the __Sumary__ section at the end to read the key points if you're into that.
+This is a long lesson, you may appreciate this experimental clickable index.  Consider starting with the Summary:
+* [Intro](#Intro)
+* [Our Gulpfile](#Our-Gulpfile)
+* [Gulp and Tasks](#Gulp-and-Tasks)
+* [Mini Quiz](#Mini-Quiz)
+* [JS Task](#JS-Task)
+* [The Other Tasks](#The-Other-Tasks)
+* [Mini Exercises](#Mini-Exercises)
+* [Summary](#Summary)
 ___
+### Intro
 So far our front-end apps have been simple little things.  We've written them in es5, loaded all the files individually, and run the code exactly as we wrote it in the files.  Life won't always be so simple.
 
 As your apps become more sophisticated you'll begin using syntax and libraries that aren't supported by all browsers. You'll want to serve your app as a single file rather than publicly hosting all the source code.  Your apps will become much larger and you'll want to compress them before serving them.  You'll want to configure the app before serving it to accomodate different types of users. You'll want to test your app in the backend using simulated users. Dot dot dot.
 
 All of these advanced development techniques will require converting the source code you write into production code your users will run.  This is called 'packaging' or 'bundling'.The world of packaging is ENORMOUS.  Welcome to our tiny introduction.
 ___
-### Our _gulpfile.js_
+### Our Gulpfile
 To contain the scope of this lesson and to give everything a practical grounding this lesson will break down the script we have provided for the 'Be You Tube' project.  Below is a short description of what each module does followed by the cli command to run the script, and the script itself.  Take a few minutes trying to decipher the script yourself before moving on to the explanations.
 
 The modules it uses:
@@ -68,7 +77,7 @@ Hopefully by now you can look through the script above and recognize a few thing
  
 For more info on using gulp check the [documentation](https://github.com/gulpjs/gulp/blob/master/docs/API.md).
 ___
-#### Mini quiz.  
+#### Mini Quiz 
 What would you enter in the terminal to run these scripts? 
 What would be their behavior? 
 ``` javascript
@@ -77,7 +86,7 @@ gulp.task('hib', function(){return console.log('hib')} );
 ```
 ___
 
-### 'JS' Task
+### JS Task
 We be breaking this down:
 ```javascript
 gulp.task("js", function() {
@@ -172,6 +181,8 @@ Key points:
 * 'Gulp.watch' returns a process that watches the designated directory for changes in files with a designated extension.
 
 This sums up our tiny introduction to gulp and tasks.  There is much more to babelify and browserify, and we didn't say anything about vinyl. Covering those would open another wormhole, and they aren't relevant to Being YouTube.
+
+Back to the [TOP](#Bundling-with-Node)
 
 Here's an [article](http://egorsmirnov.me/2015/05/25/browserify-babelify-and-es6.html) that's a different perspecive on this same type of script.
 
