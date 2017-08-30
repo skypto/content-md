@@ -1,23 +1,23 @@
 # Bundling with Node
 
 This is a long lesson, you may appreciate this experimental clickable index.  Consider starting with the Summary:
-* [Intro](###Intro)
-* [Our Gulpfile](###Our-Gulpfile)
-* [Gulp and Tasks](###Gulp-and-Tasks)
-* [Mini Quiz](###Mini-Quiz)
-* [JS Task](###JS-Task)
-* [The Other Tasks](###The-Other-Tasks)
-* [Mini Exercises](###Mini-Exercises)
-* [Summary](###Summary)
+* [Intro](#Intro)
+* [Our Gulpfile](#Our-Gulpfile)
+* [Gulp and Tasks](#Gulp-and-Tasks)
+* [Mini Quiz](#Mini-Quiz)
+* [JS Task](#JS-Task)
+* [The Other Tasks](#The-Other-Tasks)
+* [Mini Exercises](#Mini-Exercises)
+* [Summary](#Summary)
 ___
-### Intro
+# Intro
 So far our front-end apps have been simple little things.  We've written them in es5, loaded all the files individually, and run the code exactly as we wrote it in the files.  Life won't always be so simple.
 
 As your apps become more sophisticated you'll begin using syntax and libraries that aren't supported by all browsers. You'll want to serve your app as a single file rather than publicly hosting all the source code.  Your apps will become much larger and you'll want to compress them before serving them.  You'll want to configure the app before serving it to accomodate different types of users. You'll want to test your app in the backend using simulated users. Dot dot dot.
 
 All of these advanced development techniques will require converting the source code you write into production code your users will run.  This is called 'packaging' or 'bundling'.The world of packaging is ENORMOUS.  Welcome to our tiny introduction.
 ___
-### Our Gulpfile
+# Our Gulpfile
 To contain the scope of this lesson and to give everything a practical grounding this lesson will break down the script we have provided for the 'Be You Tube' project.  Below is a short description of what each module does followed by the cli command to run the script, and the script itself.  Take a few minutes trying to decipher the script yourself before moving on to the explanations.
 
 The modules it uses:
@@ -55,7 +55,7 @@ gulp.task("watch", function() {
 });
 ```
 ___
-### Gulp and Tasks
+# Gulp and Tasks
 A _task_ is something you'd like to automate, a series of commands that you have to carry out often and would be tedious to do by hand.  In this way gulp tasks are similar to [shell scripts](https://github.com/jankeLearning/content-md/blob/master/dev-knowledge/04-sh-scripts.md).  The main difference between a gulp and a shell script is that gulp tasks can be configured to execute automatically.  (It is possible to write a gulp task that executes a shell script automatically whenever something specific happens.) You declare all of your gulp tasks in 'gulpfile.js'.
 
 To execute a gulp task, type 'gulp' in the command line followed by the name of the task you'd like to run.  In our script that means you have 3 choices:
@@ -77,7 +77,7 @@ Hopefully by now you can look through the script above and recognize a few thing
  
 For more info on using gulp check the [documentation](https://github.com/gulpjs/gulp/blob/master/docs/API.md).
 ___
-#### Mini Quiz 
+# Mini Quiz 
 What would you enter in the terminal to run these scripts? 
 What would be their behavior? 
 ``` javascript
@@ -86,7 +86,7 @@ gulp.task('hib', function(){return console.log('hib')} );
 ```
 ___
 
-### JS Task
+# JS Task
 We be breaking this down:
 ```javascript
 gulp.task("js", function() {
@@ -115,7 +115,7 @@ gulp.task("js", function() {
 
 This task does all of the 'real work'.  It browserifies the designated file, transpiles the code to pure es5, bundles it into a giant browser-friendly file, writes it to a file, and puts that file where you want it.  Break it down now:
 
-##### Line 1
+#### Line 1
 > This is the most involved line.  There are 2 things happening.
 
 >    1 -  'return'.  The callback returns something.  Just how this works is nls, it requires an understanding of how the gulp CLI works. Ignore this for now.
@@ -124,38 +124,38 @@ This task does all of the 'real work'.  It browserifies the designated file, tra
 > The importance of this line is to set the bundling process in motion by pulling all the code from all your files into a single browser-friendly file.  You have planned your app (through 'exports' and 'requires') be entirely executable from a single file.  This is helpful now for testing in node, and later when you're writing front-end apps.
 Try exploring this line of code's inermediate value.
 
-##### Lines 2-4
+#### Lines 2-4
 > These lines pass the assembled application through babel, transpiling your code into es5.  This is done for browser support.  
 
 > For a hands-on eploration of Babel, checkout their [live demo]().
 
-##### Line 5
+#### Line 5
 > what does this do
 
-##### Line 6
+#### Line 6
 > Pipe the result from line 5 into a file called 'bundle.js'.
 
 > __Pipe__ is originally a shell command, this and the next line use a module that enables your JS script to access your operating system. Piping takes the result of one command line operation and sends it directly as an argument to another.  It's like composing functions in JS:  f1(f2(arg)).  
 Check out this [resource list](https://github.com/jankeLearning/content-md/blob/master/dev-knowledge/04-sh-scripts.md) to learn more. 
 
-##### Line 7
+#### Line 7
 > Designate a relative or absolute location for that file to end up.
 
 (For more info on the 'bundle', 'transform', 'browserify', 'pipe' methods check the [docs](https://github.com/browserify/browserify#usage).)
 
 So the 'JS' task accesses your source code, bundles it, translates it, and places that bundle where it belongs.  What's left?
 ___
-### The Other Tasks
+# The Other Tasks
 
 The two remaining tasks ('default' and 'watch') are much shorter:
-##### 'Default' Task:
+#### 'Default' Task:
 ```js
 gulp.task("default", ["js"]);       
 ```
 This is a very simple task, a perfect example of how the array feature of 'task' syntax works.  You are simply wrapping a few tasks into one meta-task.  Check out the second mini-exercise to figure out how this works.
 
 
-##### 'Watch' Task:
+#### 'Watch' Task:
 ```js
 gulp.task("watch", function() {
   return gulp.watch("./src/**.js", ["default"]);
@@ -164,7 +164,7 @@ gulp.task("watch", function() {
 'Gulp.watch' is responsible for noticing changes in the designated files.  The first arg (string) gives a path augmented with some regular expressions.  Changes in any files under this path's umbrella will trigger the callback(s) in the second argument, in this case the 'default' task.
 Notice that to understand 'gulp watch' you have to read backwards through callback arrays.
 ___
-### Mini Exercises
+# Mini Exercises
 1. What happens if you remove the brackets from the second argument in 'default' or 'gulp.watch'?
 2. Find 2-3 ways to run the 'hia' task whenever 'watch' is triggered.
 3. Can you create or modify a task to create an infinite loop of tasking?
@@ -172,7 +172,7 @@ ___
 5. Create a file in 'src' with an extension other than '.js'.  Run 'gulp watch', modify the new file and observe what happens in your terminal.  Can you change this behavior?
 
 ___
-### Summary
+# Summary
 Key points:
 * Gulp is a CLI and node module that allow you to write automated CLI tasks in a JS file.
 * Tasks are defined with two arguments: 
