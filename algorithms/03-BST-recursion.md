@@ -38,7 +38,7 @@ If you're into these nerdy JS details:
 * [Complete intro to nfe's](https://kangax.github.io/nfe/)
 
 ___
-## ... Except when its not that simple. 
+## Except when its not that simple. 
 Recursion as a principle is very simple.  
 Understanding when recursion is the right choice is trickier.
 Writing good recursive solutions can be very hard.
@@ -63,7 +63,7 @@ ___
 # Reversing a Word
 A CASE STUDY IN RECURSION
 ___
-#### Is This Problem Recursive
+### Is This Problem Recursive
 Let's try to find a recursive solution to reversing a word:
 1. Is the task I’m trying to achieve composed of similar sub-tasks?
     * YES!  The word is made up of many letters, and each pair letter will need to be reversed.
@@ -72,7 +72,7 @@ Let's try to find a recursive solution to reversing a word:
 
 Cleared for take off -->
 ___
-#### Breaking down the problem
+### Breaking down the problem
 Let's ask some questions to start off our recursive solution:
 1. What is the simplest sub-task that composes my main goal?
     * Reversing two letters. 
@@ -91,7 +91,7 @@ Let's ask some questions to start off our recursive solution:
     
 So what do these answers mean?  When figuring out tricky algorithms it's best to pick a specific example and work it through by hand.
 ___
-#### Visualizing the Solution
+### Visualizing the Solution
 Below is a diagram that takes an example argument 'mattress' and illustrates the recursive solution indicated by our answers to the above questions.  
 
 
@@ -100,7 +100,7 @@ Below is a diagram that takes an example argument 'mattress' and illustrates the
 __Mini Quiz__: Can you guess why this example uses an 8 letter word?
 
 ___
-#### Code for the Diagram 
+### Code for the Diagram 
 Functions like the simple examples at the top of the page can only break down the input, they can't reconstruct a final solution out of the smaller pieces.  Add in a return statement and your recursive functions become much more powerful.  You can now construct larger solutions out of the smaller pieces.
 
 In this example the smaller pieces are individual letters that have been reversed and the larger solution is a whole word that has been reversed.  
