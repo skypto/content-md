@@ -1,6 +1,6 @@
 Async 2: Promises
 ===
-
+[linky](#project)
 A **Promise** is an object representing the eventual completion or failure of an asynchronous operation. A promise may be created using its constructor. However, most people are consumers of already-created promises returned from functions. This segment will therefore explore consumption of returned promises first.
 
 Essentially, a promise is a returned object you attach callbacks to, instead of passing callbacks into a function.
@@ -118,7 +118,7 @@ Exercises
 
 Need to create some exercises using API requests and promises
 
-Project
+# Project
 ---
 
 Link to Project: https://github.com/jankeLearning/projects/tree/master/04-twitz
