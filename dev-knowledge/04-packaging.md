@@ -1,14 +1,14 @@
 # Bundling with Node
 
 This is a long lesson, you may appreciate this experimental clickable index.  Consider starting with the Summary:
-* [Intro](#Intro)
-* [Our Gulpfile](#Our-Gulpfile)
-* [Gulp and Tasks](#Gulp-and-Tasks)
-* [Mini Quiz](#Mini-Quiz)
-* [JS Task](#JS-Task)
-* [The Other Tasks](#The-Other-Tasks)
-* [Mini Exercises](#Mini-Exercises)
-* [Summary](#Summary)
+* [Intro](#intro)
+* [Our Gulpfile](#our-gulpfile)
+* [Gulp and Tasks](#gulp-and-tasks)
+* [Mini Quiz](#mini-quiz)
+* [JS Task](#js-task)
+* [The Other Tasks](#the-other-tasks)
+* [Mini Exercises](#mini-exercises)
+* [Summary](#summary)
 ___
 # Intro
 So far our front-end apps have been simple little things.  We've written them in es5, loaded all the files individually, and run the code exactly as we wrote it in the files.  Life won't always be so simple.
