@@ -2,7 +2,7 @@
 "A function that calls itself until it doesn't."
     - Mattias P Johansson
     
-Index:
+Index:  
     * [Recursion is that simple](#recursion-is-that-simple)...
     * [simple examples](#a-couple-very-simple-examples)
     * ... [except when it's not.](#except-when-its-not-that-simple)
