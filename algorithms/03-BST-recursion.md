@@ -75,7 +75,7 @@ ___
 ### Breaking down the problem
 Let's ask some questions to start off our recursive solution:
 1. What is the simplest sub-task that composes my main goal?
-    * Reversing two letters. 
+    * Reversing chunks of letters that make up the word. 
 2. What’s the smallest component (base case) on which I can perform this task?
     * Either a pair of single letters OR one letter and an 'empty letter' (undefined) - depending on if a word (or fragment of a word) is even or odd.
 3. How do I break the large component into smaller ones?
@@ -89,7 +89,7 @@ Let's ask some questions to start off our recursive solution:
     1. Reverse them and concatinate them.  
     2. Return the new string so the previous recursive call can do the same with this substring and it's buddy.
     
-So what do these answers mean?  When figuring out tricky algorithms it's best to pick a specific example and work it through by hand.
+So what do these answers mean?  When figuring out tricky algorithms it's best to pick a specific example and visually work it through by hand.
 ___
 ### Visualizing the Solution
 Below is a diagram that takes an example argument 'mattress' and illustrates the recursive solution indicated by our answers to the above questions.  
