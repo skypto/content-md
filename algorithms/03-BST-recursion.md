@@ -40,7 +40,7 @@ If you're into these nerdy JS details:
 ___
 ## Except when its not that simple. 
 Recursion as a principle is very simple.  
-Understanding when recursion is the right choice is trickier.
+Understanding when recursion is the right choice is trickier.  
 Writing good recursive solutions can be very hard.
 
 This lesson will only go as far as how to recognize when recursion may be the right choice. For further study complete the[ _data structures_](https://github.com/jankeLearning/projects/tree/master/03-data-structures) project and consult the [resources](#resources) a the bottom of this page.
