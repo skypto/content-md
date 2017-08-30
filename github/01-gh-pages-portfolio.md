@@ -11,4 +11,7 @@ ___
 ### Resources
 How to:  [thinkful](https://www.thinkful.com/learn/a-guide-to-using-github-pages/)
 Why to: [anti-pattern](http://anti-pattern.com/github-is-your-resume-now
-), [gainlo](http://blog.gainlo.co/index.php/2015/11/13/how-to-make-github-as-your-new-resume/)
+), [gainlo](http://blog.gainlo.co/index.php/2015/11/13/how-to-make-github-as-your-new-resume/)  
+  
+#### An example we didn't make:  
+* [Mr. Kangax](http://kangax.github.io)

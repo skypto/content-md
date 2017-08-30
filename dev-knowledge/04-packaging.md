@@ -1,6 +1,6 @@
 # Bundling with Node
 
-This is a long lesson, you may appreciate this experimental clickable index.  Consider starting with the Summary:
+This is a long lesson, you may appreciate the clickable index.  Consider starting with the Summary:
 * [Intro](#intro)
 * [Our Gulpfile](#our-gulpfile)
 * [Gulp and Tasks](#gulp-and-tasks)
@@ -182,7 +182,7 @@ Key points:
 
 This sums up our tiny introduction to gulp and tasks.  There is much more to babelify and browserify, and we didn't say anything about vinyl. Covering those would open another wormhole, and they aren't relevant to Being YouTube.
 
-Back to the [TOP](#Bundling-with-Node)
+Back to the [TOP](#bundling-with-node)
 
 Here's an [article](http://egorsmirnov.me/2015/05/25/browserify-babelify-and-es6.html) that's a different perspecive on this same type of script.
 
