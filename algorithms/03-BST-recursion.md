@@ -3,17 +3,17 @@
     - Mattias P Johansson
     
 Index:  
-    * [Recursion is that simple](#recursion-is-that-simple)...
-    * [simple examples](#a-couple-very-simple-examples)
-    * ... [except when it's not.](#except-when-its-not-that-simple)
-    * [When and How](#when-and-how-to-recurse)
-    * [Reversing a Word](#reversing-a-word) - a case study
-        * [Is Recursion appropriate?](#is-this-problem-recursive)
-        * It is. [How to begin?](#breaking-down-the-problem)
-        * [Visualizing the solution](#visualizing-the-solution)
-        * [Coding the Solution](#code-for-the-diagram)
-    * [Resources](#resources)
-    * [Next Steps](#next-steps)
+* [Recursion is that simple](#recursion-is-that-simple)...
+* [simple examples](#a-couple-very-simple-examples)
+* ... [except when it's not.](#except-when-its-not-that-simple)
+* [When and How](#when-and-how-to-recurse)
+* [Reversing a Word](#reversing-a-word) - a case study
+    * [Is Recursion appropriate?](#is-this-problem-recursive)
+    * It is. [How to begin?](#breaking-down-the-problem)
+    * [Visualizing the solution](#visualizing-the-solution)
+    * [Coding the Solution](#code-for-the-diagram)
+* [Resources](#resources)
+* [Next Steps](#next-steps)
 ___
 ## Recursion is that simple ...
 That's all. Done.  Recursive functions call themselves until they don't.  It really is that simple.
