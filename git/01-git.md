@@ -30,6 +30,7 @@ Study resources:
 * A little [history](https://www.youtube.com/watch?v=1h9_cB9mPT8&feature=youtu.be&t=13s)
 * Comprehensive [git CheatSheet] from Tiimgreen(https://github.com/tiimgreen/github-cheat-sheet).
 * Learn [git tagging](http://alblue.bandlem.com/2011/04/git-tip-of-week-tags.html).  
+* [Some common tasks](http://jlord.us/git-it/)
 
 
 Practice resources: 

@@ -1,0 +1,1 @@
+https://github.com/stujo/agile-git-workflow

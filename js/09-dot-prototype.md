@@ -25,3 +25,5 @@ There was a species of 'first mammals'.  the first animal to have all the import
 
 All mammals come from that guy.  Every
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/An_evolutionary_tree_of_mammals.jpeg/450px-An_evolutionary_tree_of_mammals.jpeg)
+
+http://javascriptissexy.com/javascript-prototype-in-plain-detailed-language/

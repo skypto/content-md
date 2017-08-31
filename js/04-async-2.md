@@ -133,3 +133,6 @@ External Resources
 + [learning promises](https://colintoh.com/blog/staying-sane-with-asynchronous-programming-promises-and-generators)  
 + a sick [github of examples](https://github.com/vasanthk/async-javascript)  
 + [a library](https://caolan.github.io/async/) to help with async programming.  
++ https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Promise
++ https://scotch.io/tutorials/javascript-promises-for-dummies
++ http://www.telerik.com/blogs/what-is-the-point-of-promises

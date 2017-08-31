@@ -127,7 +127,7 @@ Try exploring this line of code's inermediate value.
 #### Lines 2-4
 > These lines pass the assembled application through babel, transpiling your code into es5.  This is done for browser support.  
 
-> For a hands-on eploration of Babel, checkout their [live demo]().
+> For a hands-on eploration of Babel, checkout their [live demo](https://babeljs.io).  Here's also a good [interactive tutorial](https://github.com/stujo/javascript-babel-tutorial).  
 
 #### Line 5
 > what does this do

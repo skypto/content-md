@@ -99,3 +99,5 @@ Here you'll find some resources about some more trickier concepts regarding Java
 + https://bonsaiden.github.io/JavaScript-Garden/
 
 + http://www.thatjsdude.com/interview/js2.html
+
++ https://wtfjs.com
