@@ -76,3 +76,4 @@ External Resources
 + How does the internet work:
     + part 1: https://www.youtube.com/watch?v=e4S8zfLdLgQ
     + part 2: https://www.youtube.com/watch?v=FTAPjr7vgxE
++ Everything - http://taligarsiel.com/Projects/howbrowserswork1.htm#The_main_flow
