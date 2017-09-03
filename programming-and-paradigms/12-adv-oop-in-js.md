@@ -12,3 +12,15 @@ Polymorphism
 http://www.adobe.com/devnet/actionscript/learning/oop-concepts/polymorphism-and-interfaces.html
 https://www.npmjs.com/package/mixin
 https://github.com/rse/aggregation
+
+
+stampit
+
+crockford: stateless and methodless objects
+
+object pools, proxies
+
+
+a function that has all the properties to act as the general-case app.  when it is called directly with parameters it copies it's methods/props to a new object (configuring it along the way) and returns it.
+
+The copy mechanism is another form of prototypal inheritance. Sources of clone properties are a specific kind of prototype called exemplar prototypes, and cloning an exemplar prototype is known as concatenative inheritance.

@@ -1,3 +1,39 @@
+# Abstractions
+
+write a script
+
+wrap it in a function
+
+use the function in a script
+
+put the script in a function 
+
+...
+
+this is abstraction
+
+___
+
+pitfalls of abstraction:
+	native js methods
+	.1 + .2
+
+
+> _Abstraction_ :  keep this?  probs not
+The process of considering something independently of its associations, attributes, or concrete accompaniments.   - Mr. MacDictionary
+
+
+Whenever you write a function, or assign a name to a variable you are writing your own abstractions
+
+You write with a pen but don't know the chemistry that causes the ink to stick to the paper.  
+
+You can't deduce how these things work, the scientific method is a terrible idea in programming.  read the documentation - if its any good someone who knows the tools better than you will explain how it works.
+
+In the world of programming, everything is an abstraction - a simplification of something more fundamental and more complex.  Assembly code is an abstraction over machine code. Machine code is an abstraction over electrical currents in your computer. JS is an abstraction over machine (though perhaps a few layers up).  jQuery is an abstraction over JS.  Express is an abstraction over JS. Axios is an abstraction over fetch. Nothing is 'natural'.  Every inch of JS, every library you use, every application or runtime is built from smaller pieces, by a human, to make a particular task easier for _you_.
+
+This is the purpose of abstractions, to make something easier.  You are here to build web apps, but probably will never learn to parse HTTP or write network protocol.  You're writing in JS but will probably never learn to code in machine.  Very few people, if anyone, know how everything in a computer or in the internet works.  Everyone involved understands how to use their tools (Microsoft Word, Node.js, Mac OS), and rely on other people to provide them with those tools.  We call these tools __abstractions__.
+
+
 
 
 Jeff Goodell: Would you explain, in simple terms, exactly what object-oriented software is?
