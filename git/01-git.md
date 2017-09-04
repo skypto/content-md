@@ -26,11 +26,12 @@ Study resources:
 * [Git and Github in plain English](https://blog.red-badger.com/blog/2016/11/29/gitgithub-in-plain-english).  Out standing overview.
 * Complete [git workflow and overview](https://www.vikingcodeschool.com/web-development-basics/getting-to-know-git).
 * The [git workflow cheatsheet](https://github.com/adrianholovaty/git_workflow) to git.  All the commands you need for our workflow.
-* Another great resource for using tags in git (https://www.youtube.com/watch?v=Yvy5PijsVZw)
+
 * Derek Banas' [introduction videos](https://www.youtube.com/watch?v=r63f51ce84A), if you're into videos.  
 * A little [history](https://www.youtube.com/watch?v=1h9_cB9mPT8&feature=youtu.be&t=13s)
 * Comprehensive [git CheatSheet] from Tiimgreen(https://github.com/tiimgreen/github-cheat-sheet).
 * Learn [git tagging](http://alblue.bandlem.com/2011/04/git-tip-of-week-tags.html).  
+* Another great resource for understanding tags in git (https://www.youtube.com/watch?v=Yvy5PijsVZw)
 * [Some common tasks](http://jlord.us/git-it/)
 
 
