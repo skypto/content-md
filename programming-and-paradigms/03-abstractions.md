@@ -19,6 +19,9 @@ pitfalls of abstraction:
 	.1 + .2
 
 
+
+
+
 > _Abstraction_ :  keep this?  probs not
 The process of considering something independently of its associations, attributes, or concrete accompaniments.   - Mr. MacDictionary
 
