@@ -101,3 +101,7 @@ Here you'll find some resources about some more trickier concepts regarding Java
 + http://www.thatjsdude.com/interview/js2.html
 
 + https://wtfjs.com
+
++ if you have programming experience : http://spencertipping.com/js-in-ten-minutes/js-in-ten-minutes.pdf
+
++ [Object coersion](https://javascriptweblog.wordpress.com/2010/09/27/the-secret-life-of-javascript-primitives/)
