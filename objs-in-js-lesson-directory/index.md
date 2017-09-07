@@ -1,19 +1,18 @@
-directory
-|- index
-|- 
-|
-|
-|
-|
-|
-|
-|
-
 
 oop 1
+prototypes
+factories
+ways to inherit
+advanced design patterns
 
-scope context 1
+fit in scope/context, closures ?
 
-scope context 2
 
-oop 2
+Intro
+using single objects
+ways of using objects
+	the native way - prototypical
+	the functional way - factories
+	the classical way - contrived
+fancy hybrid design patterns
+op-eds

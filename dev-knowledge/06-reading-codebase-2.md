@@ -1,1 +1,0 @@
-reading as funcitons, constructors, and objects

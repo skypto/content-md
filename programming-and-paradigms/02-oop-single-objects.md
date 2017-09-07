@@ -1,4 +1,4 @@
-# Object Oriented Programming 1
+# OOP - single objects
 OOP is one of many programming concepts that are intimidating to approach.  Googling 'OOP' will turn up some pretty incomprehensible langue, take a look through the first sentence of Wikipedia's entry on OOP:
 >  Object-oriented programming (OOP) is a programming paradigm based on the concept of "objects", which may contain data, in the form of fields, often known as attributes; and code, in the form of procedures, often known as methods. 
 

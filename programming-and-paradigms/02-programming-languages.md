@@ -1,15 +1,4 @@
 # Programming Languages and Paradigms
- 
-This is a series of lessons that will get you started on your path to understanding programming from a meta point of view.  
-1. [Programming Languages and Paradigms]()
-2. [Procedural Programming]()
-3. [Object Oriented Programming I]()
-4. [Object Oriented Programming II]()
-5. [Functional Programming I]()
-6. [OOP vs FP]()
-7. [Functional Programming II]()
-
-No further ado, lettuce begin step 1.
 ___ 
 ### Programming: What's that, friend?
 We're good at understanding the world and coming up with strategies for achieving what we want.  

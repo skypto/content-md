@@ -155,6 +155,7 @@ Like with algorithms, recursion is a tricky topic.  Take a look through all of t
 * [A search of FreeCodeCamp for 'Recursion'](https://medium.freecodecamp.org/search?q=recursion)
 * [On tail calls](https://medium.com/functional-javascript/recursion-282a6abbf3c5)
 * [Simpler video with good animations](https://www.youtube.com/watch?v=FyHloXKnPWc). Loops vs. Recursion
+
 ___
 ### Next Steps
 The best two options for further exploring recursion are _sorting algorithms_ and _data structures_.  We're going the data structrure route, if you'd like to spend some extra time to learn about sorting just let us know.  We can point you the way.

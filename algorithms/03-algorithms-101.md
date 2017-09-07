@@ -20,3 +20,7 @@ ___
 * [hackerearth data structure](https://www.hackerearth.com/fr/practice/data-structures/arrays/1-d/tutorial/)
 * [hackerearth index page](https://www.hackerearth.com/fr/practice/)    
 * [Open your mind!](http://algorithms.openmymind.net)
+* Completer guides to this stuff
+    * https://github.com/nzakas/computer-science-in-javascript  
+    * https://www.rithmschool.com/courses/javascript-computer-science-fundamentals  
+    * https://github.com/rithmschool/javascript_computer_science_exercises  

@@ -1,24 +1,31 @@
 
-# Object Based Programming - Prototypical Inheritance
+# OOP 2 - Prototypical Inheritance and Factories
 ___
 #### Table of Contents
-* [intro](#welcome-to-inheritance)
-* [Absolute Must Learn Fundamentals](#prototypical-fundamentals)
+* [Prototypical Inheritance](#welcome-to-inheritance)
+    * [Hands-On Exploration](#hands-on-exploration)
     * [proto lookup chain](#proto-lookup-chain)
     * [Useful Native Methods](#useful-native-methods)
     * [Recommended Practices](#recommended-practices)
-    * [Exercises](#prototype-exercises)
-* [Using Inheritance Fundamentals](#using-inheritance-fundamentals)    
+    * [Prototype Exercises](#prototype-exercises)
+* [Factories](#Factories)    
     * [factories](#factories)
     * [recommeded design patterns](#recomended-design-patterns)
-    * [advanced design patterns](#advanced-design-patterns)
     * [Exercises](#factory-exercises)
-    * [Resources](#using-prototype-resources)
-* [Other Ways to Inherit](#other-ways-to-inherit)
+    * [Factory, Composition Resources](#factory-and-composition-resources)
+* [Using Inheritance](#using-inheritance)
+    * [Mixins](#mixins) 
     * [Constructor Functions](#constructor-functions)
-    * [Using Constructor Functions](#using-constructor-functions)
     * [ES6 classes](#es6-classes)
-* [Op Eds](#comprehensive-resources)
+* [Advanced Design Patterns](#advanced-design-patterns)
+* [The Great Debate](#comprehensive-resources)
+
+intro
+protoypes
+factories
+ways of inheriting
+advanced design patterns
+op-eds
 ___
 ___
 # Welcome to Inheritance
@@ -50,7 +57,7 @@ In JS objects are the players, not the game.   The game is objects/prototypes, f
 [TOP](#table-of-contents)
 ___
 ___
-## Prototypical Fundamentals
+## Hands On Exploration
 When you hear that everything in JS is an object, this is literally true.  If you follow the _prototype chain_ of any native JS type (number, object, funciton, array, ...) you will find that it's oldest ancestor is '[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)'. Object with a Capital "O".  This isn't all theoretical, you can see it for yourself.  Complete these mini-exercises in ChromDev for a preview of coming attractions:
 1. An Empty Object:
     1. Create an empty object called 'obj'.
@@ -183,7 +190,7 @@ In the previous examples we have set protoypes by directly manipulating the '.\_
     
 
 
-That sums up the basics of Prototypical Inheritance.  You have the lookup chain, and a couple tools for directly investigating or manipulating it.  The next chapter will look at how to use this knowledge in the wild.
+That sums up the basics of Prototypical Inheritance.  You have the lookup chain, and a couple tools for directly investigating or manipulating it.  Knowing when and how to use these tools can be tricky.  Our first recommendation is to design your code so you don't have to deal with the look-up chain.  The next chapter on Factories shows how to incorporate OOP into your app without using inheritance.  If you really just want to use inheritance, skip to [Using Inheritance](#using-inheritance) to learn how.
 
 [TOP](#table-of-contents)
 ___
@@ -193,174 +200,132 @@ some simplish challenges
 [TOP](#table-of-contents)
 ___
 ___
-## Using Inheritance Fundamentals
-You'll rarely use inheritance in isolation.  What's more common is to wrap prototype manipulations in a function for re-use - to dynamically create similar objects, to manage inheritance chains in real-time, for smooth interfaces, for reusable components, and most importantly for fun.  There are many ways to do this, but all(most) of them boil down to functions that return an object, or functions that return functions that return objects.  
+## Factories
 
-While JS gives you freedom to do whatever you want, there are a few conventional _design patterns_ floating around the JS dev community.  
-We will first cover simple patterns that only use the tools mentioned in the last section They have very litte mystery, everything they do is clear (as can be in coding).  These are basic but flexible, you shouldn't need anything else for quite a while.  
-Next there are examples of more advanced patterns.  This is when things get fun.  The [Module Pattern](https://toddmotto.com/mastering-the-module-pattern/) is an important one, Express and many other popular NPM modules use it.  We won't cover these advanced patterns in detail, you can learn these when you know why you need them.
+[tl;dr](https://blog.gisspan.com/2016/07/Constructor-Vs-Factory.html)
 
-[TOP](#table-of-contents)
-___
-### Factories
-functions that return objects
-that's about it
-most modules use factories.
-Next you will see some design patterns that manipulate execution context (closures, binding, immediate execution), or return other factories.
-[Mr funfunfunctional](https://www.youtube.com/watch?v=ImwrezYhw4w) explains factories.
+In the modern world of JS development objects are the players, not the game.  The game is FP.  Inheritance is the OOP approach to creating and extending objects, factories are FP's answer to inheritance. 
+
 
 [TOP](#table-of-contents)
 ___
 ### Recommended Design Patterns
-These patterns should be enough until one day you know why you need something else, at that point you can make it yourself.
+These simple patterns are more than enough to get you started. One day you know why you need something facnier, at that point you can make it up yourself.
 
 Some benefits to using these patterns:
 * Simple to understand.  They're pretty much what-you-see-is-what-you-get, object literals being created inside of functions.
-* 'This' behaves very nicely.  Unless you bind or use arrow functions, execution context will mirror the prototype chain. 
-* These patterns are good examples to study closures and  trasition smoothly into more advanced closure-based patterns.
+* 'This' behaves very nicely.  Unless you bind or use arrow functions, you'll never need to think about 'this' again.
+* As they sit at the intersection of OOP and FP in JS, these patterns are a great way to study execution context.
 
 #### The Patterns
-* [Simple factory](#simple-simple-factory)
-* [factory](#factory)
-* [composing factory](#composing-factory) - preferred
-* [inheriting factory](#inheriting-factory)
+* [Simple factory](#simple-factory)
+* [extending with composition](#extending-with-composition) 
 * [get creative with 'assign' and 'create'](#getting-creative)
     
     
 
-#### Simple Simple Factory
-    * A function that builds and returns an object literal.  Does not touch the inheritance chain:
-        ```js
-        function cow_factory_1(name, breed) {
-            return {
-                        name: name,
-                        breed: breed,
-                        moo: function() { console.log('moo') },
-                            // what do these do when you change the cow's name?
-                        closure_es6: () => { console.log('hi, im ' + name) };
-                        closure_es5: function() { console.log('hi, im ' + name) };
-                        context_es6: () => { console.log('hi, im ' + this.name) };
-                        introduce: function() { console.log('hi, im ' + this.name) };
-                    };
-        };
-        
-        function cow_factory_2(name, breed) {
-            function moo() { console.log('moo') };
-            function introduce() { console.log('hi, im ' + this.name) };
-            return {
-                        name,
-                        breed,
-                        moo,
-                        introduce
-                    };
-        };
-        
-        function cow_factory_3(name, breed) {
-            var new_cow = {};
-            new_cow.name = name;
-            new_cow.breed = breed;
-            new_cow.moo = function() { console.log('moo') };
-            new_cow.introduce = function() { console.log('hi im ' + this.name) };
-            return new_cow;
-        };
-        
-        ```
-    * Use this pattern whenever you need objects that start out with the same methods and sampe properties but different values.  This pattern should be your fallback, it'll do almost everything you need in this class.
+#### Simple Factory
+* A function that builds and returns an object literal.  Does not touch the inheritance chain:
+    ```js
+    function cow_factory_1(name, breed) {
+        return {
+                    name: name,
+                    breed: breed,
+                    moo: function() { console.log('moo') },
+                        // what do these do when you change the cow's name?
+                    closure_es6: () => { console.log('hi, im ' + name) };
+                    closure_es5: function() { console.log('hi, im ' + name) };
+                    context_es6: () => { console.log('hi, im ' + this.name) };
+                    introduce: function() { console.log('hi, im ' + this.name) };
+                };
+    };
+    
+    function cow_factory_2(name, breed) {
+        function moo() { console.log('moo') };
+        function introduce() { console.log('hi, im ' + this.name) };
+        return {
+                    name,
+                    breed,
+                    moo,
+                    introduce
+                };
+    };
+    
+    function cow_factory_3(name, breed) {
+        var new_cow = {};
+        new_cow.name = name;
+        new_cow.breed = breed;
+        new_cow.moo = function() { console.log('moo') };
+        new_cow.introduce = function() { console.log('hi im ' + this.name) };
+        return new_cow;
+    };
+    
+    ```
+    * Use this pattern whenever you need objects that start out with the same methods and same properties but different values.  This pattern should be your fallback, it'll do almost everything you need in this class.
     * These three ways are all interchangable, use whatever works for you but be consistent.
-    * ES6 enhanced literals makes this pattern suprisingly powerful.
-    * '.map' and '...' are very useful for creating more general factories.
-    * https://blog.gisspan.com/2016/07/Constructor-Vs-Factory.html
-    * http://dealwithjs.io/design-patterns-the-factory-pattern-in-javascript/
-
-[The Patterns](#the-patterns)
+    * [ES6 enhanced literals makes this pattern suprisingly powerful](https://medium.com/javascript-scene/javascript-factory-functions-with-es6-4d224591a8b1).
+    * '.map' and '...' are very useful for creating more general-purpose factories.
+    * [Short, sweet article about this pattern ](https://blog.gisspan.com/2016/07/Constructor-Vs-Factory.html)
     
-#### Factory
-    * [this article](http://dealwithjs.io/design-patterns-the-factory-pattern-in-javascript/).  Ignore configuralbe for now. 
-* http://robdodson.me/javascript-design-patterns-factory/
-* [too fancy?](https://carldanley.com/js-factory-pattern/)
-* 
+    
 [The Patterns](#the-patterns)
 
-#### Composing Factory
-    * [the article this example came from](https://blog.gisspan.com/2016/07/Constructor-Vs-Factory.html)
-    * [funfunfunction on the topic](https://medium.com/humans-create-software/composition-over-inheritance-cb6f88070205)
-
-[The Patterns](#the-patterns)
-
-#### Inheriting Factory
-   * does this
-        ```js
-        outside prototype
-        inside prototype
-        property prototype
-            wawa!  this is the constructor. without new
-            
-        let animal = { 
-          animalType: 'animal',
-          describe () {
-            return `An ${this.animalType} with ${this.furColor} fur, 
-              ${this.legs} legs, and a ${this.tail} tail.`;
-          }
+#### Extending with Composition
+* _Composition_ is a technique for creating new objects by combining two or more objects inside of a pure function.  In go two or more objects, out comes a new object with all the old objects' properties copied into it. The new object is in no way connected to the factory, it's '\_\_proto\_\_' points to the default 'Object.prototype'.  
+* This design pattern combines incoming objects with a predetermined set of properties, 'extending' the original object to include a new set of superpowers:
+    ```js
+    function spiderify_1(arg_obj) {
+        var spider = {
+            spider: true
         };
-        let mouseFactory = function mouseFactory () {
-          return Object.assign(Object.create(animal), {
-            animalType: 'mouse',
-            furColor: 'brown',
-            legs: 4,
-            tail: 'long, skinny'
-          });
-        }; 
-        let mickey = mouseFactory();
-        // https://medium.com/javascript-scene/common-misconceptions-about-inheritance-in-javascript-d5d9bab29b0a
-        ```
-    * enumerability
-    * arrow functions don't work well with inheritance, stick to es5.  This has to do with closures, figure out what that is.  
-    * common vs individual props
-    * when to use each: comp vs inher - https://www.youtube.com/watch?v=wfMtDGfHWpA 
+        return Object.assign(arg_obj, spider);
+    };
     
-[The Patterns](#the-patterns)    
+    function spiderify_2(arg_obj) {
+        return Object.assign(arg_obj, { spider: true });
+    };
+    
+    function spiderify_3(arg_obj) {  // I think this one is the most readable
+        var new_obj = Object.assign(arg_obj, {
+                    spider: true
+                });
+        return new_obj;
+    };
+    
+    var pig = {
+        pig: true
+    };
+    var spiderpig = spiderify_3(pig);
+    // to compose two random objects just use Object.assign
+    ```
+    * Composed objects are more appropriate for functional programming than inheriting objects.  A composed object will always behave the same no matter what happens in the app (unless you change it directly). They are not susceptible to _side effects_ if their prototype object is modified or they are moved to a different context.  
+    * [mini-tutorial on composition](http://blog.ricardofilipe.com/post/javascript-composition-for-dummies)
+    * Beware of property enumerability: [Nice article + examples](https://hashnode.com/post/what-are-enumerable-properties-in-javascript-ciljnbtqa000exx53n5nbkykx), [MDN docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Enumerability_and_ownership_of_properties)
+
+
+    
+
+[The Patterns](#the-patterns)
     
 #### Getting Creative    
-    * don't underestimate 'assign' and 'create' alone!
-    * For composing or inheriting from any two objects, go with these bare methods. 
-    * [neat dictionary](http://adripofjavascript.com/blog/drips/creating-objects-without-prototypes.html), creating with 'null' proto
+* don't underestimate 'assign' and 'create' alone!
+* but beware:  Object.assign(a, b) != Object.assign(b, a)
+* For composing or inheriting from any two objects, go with these bare methods. 
+* [neat dictionary](http://adripofjavascript.com/blog/drips/creating-objects-without-prototypes.html), creating with 'null' proto
+```js
+    
+    // takes any number of objects and composes them
+    function n_adic_composer() {
+        var new_obj = {};
+        for (var object of arguments) {
+            new_obj = Object.assign(new_obj, arguments[object]);
+        };
+        return new_obj;
+    };
+```
 
-Knowing when to use which pattern, and when to create your own is an advanced topic.  There is no fixed answer, it will depend on the existing code base, your and your team-mates agreed style, your ability and strengths, as well as every other technical consideration you could dream of. 
-
-[TOP](#table-of-contents)
-___
-### Advanced Design Patterns
-Just a list, check it out on your own later.
-Static methods: yay express!  methods connected directly to the factory
-[private methods](https://atendesigngroup.com/blog/factory-functions-javascript)
-   - closing for privacy
-        - http://javascript.crockford.com/private.html
-        - https://atendesigngroup.com/blog/factory-functions-javascript
-            ```javascript
-            function privator(propVal) {
-                var privateContext = {propVal: propVal};
-                function getter() {
-                    return this.propVal;
-                };
-                function setter(newVal) {
-                    this.propVal = newVal;
-                };
-                return {
-                    getter: getter.bind(privateContext),
-                    setter: setter.bind(privateContext)
-                };
-            };
-            ```
-reassign '\_\_proto\_\_' without setprotoof, 
-    * create a function that uses assign and cleverness
-    * or that copies enumerable properties to new object with correct prototype
-[configurable factory](http://dealwithjs.io/design-patterns-the-factory-pattern-in-javascript/).    
-[Module Pattern]()
-[Stamps](https://github.com/stampit-org/stampit) 
-- https://www.reddit.com/r/javascript/comments/4jqxst/stamp_pattern/
-- [introducing stamps](https://medium.com/javascript-scene/introducing-the-stamp-specification-77f8911c2fee)
-[Deep Merge](https://davidwalsh.name/javascript-deep-merge)
-
+    
+[The Patterns](#the-patterns)    
 [TOP](#table-of-contents)
 ___
 ### Factory Exercises
@@ -369,48 +334,62 @@ closures in inherited methods
 context mirroring prototype chain
 [TOP](#table-of-contents)
 ___
-### Using Prototypes Resources
-
-* [Long talk, recommended if you love this stuff](https://vimeo.com/69255635)
-* [Assign to Merge](http://2ality.com/2014/01/object-assign.html)
-* [stamps?](https://medium.com/@_ericelliott/we-don-t-need-a-standard-for-single-inheritance-single-inheritance-taxonomies-are-an-anti-pattern-5d58ad7107d0)
-* [A stackoverflow duck](https://stackoverflow.com/questions/33692912/using-object-assign-and-object-create-for-inheritance).
-* http://wiki.c2.com/?CategoryCreationalPatterns
-* [a bit advanced](http://dealwithjs.io/design-patterns-the-factory-pattern-in-javascript/)
-* https://stackoverflow.com/questions/39571915/factory-functions-vs-object-create-javascript-when-to-use-which
-* [indepth discussion](https://nemisj.com/js-without-new-and-this/)
-* patterns
-    http://radar.oreilly.com/2014/03/javascript-without-the-this.html
-    http://davidshariff.com/blog/javascript-inheritance-patterns/ 
-        - function from crockford (each no centralized methods)
-        - prototypal - best to teach?
-
-relegate?
-* [OBP in ES6](https://maximilianhoffmann.com/posts/object-based-javascript-in-es6) - fluffy
-* * [completish article series, assumes some knowledge in programming](https://davidwalsh.name/javascript-objects) - off-focus, quality?, unecessary
-
-design pattern resources, but pretty big : 
-* https://carldanley.com/javascript-design-patterns/
-* https://github.com/FelipeBB/Design-Patterns-JS
-* http://loredanacirstea.github.io/es6-design-patterns/
-* http://tcorral.github.io/Design-Patterns-in-Javascript/
-* http://shichuan.github.io/javascript-patterns/#design-patterns
+###  Factory and Composition Resources
+* [A few ways to compose](https://medium.com/javascript-scene/the-open-minded-explorer-s-guide-to-object-composition-88fe68961bed)
+* [Trait.js, alternative to '.assign'](https://www.barbarianmeetscoding.com/blog/2016/01/04/safer-javascript-object-composition-with-traits-and-traits-dot-js/)
+* [advanced composition article](https://rjzaworski.com/2013/03/composition-in-javascript)
+* [another way of composing](https://gist.github.com/Jiert/efa5a30200d1ebb62122)
+* [configurable facotry](http://dealwithjs.io/design-patterns-the-factory-pattern-in-javascript/)
+* [Mr. Funfunfunction on factories](https://www.youtube.com/watch?v=ImwrezYhw4w)
 
 [TOP](#table-of-contents)
 ___
 ___
-## Other Ways to Inherit
+## Using Inheritance
+You'll rarely use free-standing inheritance manipulation.  What's more common is to wrap prototype manipulations in a function for re-use - to dynamically create similar objects, to manage inheritance chains in real-time, for extended functionality.  There are many ways to do this, but all(most) of them boil down to functions that return an object, or functions that return functions that return objects.  
+
+[all of it](http://www.datchley.name/understanding-prototypes-delegation-composition/)
+
+[TOP](#table-of-contents)
+___
+### Mixins
+* add to an object's inheritance chain.  sometimes right, but not usually
+* a good idea when you want to have the ability to modify the functionality of a whole lot of objects from one place.  try to avoid needing to do this
+* arrow functions don't work well with inheritance, stick to es5.  This has to do with closures, figure out what that is.  
+* common vs individual props
+* [Mr. Funfunfunction on Inheritance vs Composition](https://medium.com/humans-create-software/composition-over-inheritance-cb6f88070205)
+* http://raganwald.com/2015/06/17/functional-mixins.html
+* https://medium.com/javascript-scene/functional-mixins-composing-software-ffb66d5e731c
 
 [TOP](#table-of-contents)
 ___
 ### Constructor Functions
 important for reading mozilla documentation, but not the best practice for your own apps
 why avoid them?  because it uses 'this' in confusing ways and needing 'new' makes your code more futurproof. 
+
+constructing constructors
+    factory that sets prototype to outside object
+    facotry that attaches that object to the function
+    constructor - note the subtle differences
+    ```js
+    outerproto
+    function
+    addtoouterproto
+    
+    function.outerproto
+    function
+    addtoouterproto
+    
+    constructor
+    addtoprototype
+    ```
+
 ahttps://sangupta007.wordpress.com/2017/02/12/inheritance-tree-in-javascript/
 the diagram, explain it
 [TOP](#table-of-contents)
-___
-### Using Constructor Functions 
+[strange pseud-factory using constructors](https://carldanley.com/js-factory-pattern/)
+http://2ality.com/2013/07/defending-constructors.html
+
 [TOP](#table-of-contents)
 ___
 ### ES6 Classes 
@@ -437,7 +416,53 @@ RESOURCES:
 [TOP](#table-of-contents)
 ___
 ___
+## Advanced Design Patterns
+organize by paradigm (?)
+
+Just a list, check it out on your own later.
+Static methods: yay express!  methods connected directly to the factory
+[private methods](https://atendesigngroup.com/blog/factory-functions-javascript)
+- https://philipwalton.com/articles/implementing-private-and-protected-members-in-javascript/
+- https://philipwalton.com/articles/implementing-private-and-protected-members-in-javascript/ - and [PrivateParts](https://github.com/philipwalton/private-parts)
+- closing for privacy
+    - http://javascript.crockford.com/private.html
+    - https://atendesigngroup.com/blog/factory-functions-javascript
+        ```javascript
+        function privator(propVal) {
+            var privateContext = {propVal: propVal};
+            function getter() {
+                return this.propVal;
+            };
+            function setter(newVal) {
+                this.propVal = newVal;
+            };
+            return {
+                getter: getter.bind(privateContext),
+                setter: setter.bind(privateContext)
+            };
+        };
+        ```
+data and method objects
+reassign '\_\_proto\_\_' without setprotoof, 
+    * create a function that uses assign and cleverness
+    * or that copies enumerable properties to new object with correct prototype
+[configurable factory](http://dealwithjs.io/design-patterns-the-factory-pattern-in-javascript/).    
+[Module Pattern](https://toddmotto.com/mastering-the-module-pattern/)
+[Stamps](https://github.com/stampit-org/stampit) 
+- https://www.reddit.com/r/javascript/comments/4jqxst/stamp_pattern/
+- [introducing stamps](https://medium.com/javascript-scene/introducing-the-stamp-specification-77f8911c2fee)
+[Deep Merge](https://davidwalsh.name/javascript-deep-merge)
+[Abstract Factory](http://robdodson.me/javascript-design-patterns-factory/)
+http://raganwald.com/2016/07/20/prefer-composition-to-inheritance.html
+factory factories
+and beyond
+
+[TOP](#table-of-contents)
+___
+___
 # Op Eds
+Inheritance, compositions, design patterns.  These are all topics of heated debate in the JS community. 
+
 
 organize by opinion
 
@@ -454,6 +479,45 @@ organize by opinion
 * [proclass](https://www.sitepoint.com/javascript-object-creation-patterns-best-practises/)
 * https://medium.com/javascript-scene/javascript-factory-functions-vs-constructor-functions-vs-classes-2f22ceddf33e
 * https://medium.com/javascript-scene/common-misconceptions-about-inheritance-in-javascript-d5d9bab29b0a
+* https://8thlight.com/blog/eric-meyer/2012/11/16/composition-over-mixins.html
+* [composition vs. inheritance gist](https://gist.github.com/branneman/ff9b7f0d16621cbb93ad)
+* http://2ality.com/2013/07/defending-constructors.html
+* 
+
+_________
+
+to filter
+
+
+* [almost this whole md, plus some](https://developers.caffeina.com/object-composition-patterns-in-javascript-4853898bb9d0)
+* [Long talk, recommended if you love this stuff](https://vimeo.com/69255635)
+* [Assign to Merge](http://2ality.com/2014/01/object-assign.html)
+* [stamps?](https://medium.com/@_ericelliott/we-don-t-need-a-standard-for-single-inheritance-single-inheritance-taxonomies-are-an-anti-pattern-5d58ad7107d0)
+* [A stackoverflow duck](https://stackoverflow.com/questions/33692912/using-object-assign-and-object-create-for-inheritance).
+* http://wiki.c2.com/?CategoryCreationalPatterns
+* [a bit advanced](http://dealwithjs.io/design-patterns-the-factory-pattern-in-javascript/)
+* https://stackoverflow.com/questions/39571915/factory-functions-vs-object-create-javascript-when-to-use-which
+* [indepth discussion](https://nemisj.com/js-without-new-and-this/)
+* patterns
+    http://radar.oreilly.com/2014/03/javascript-without-the-this.html
+    http://davidshariff.com/blog/javascript-inheritance-patterns/ 
+        - function from crockford (each no centralized methods)
+        - prototypal - best to teach?
+* https://www.barkweb.co.uk/blog/object-composition-and-prototypical-inheritance-in-javascript
+http://www.datchley.name/understanding-prototypes-delegation-composition/
+
+relegate?
+* [OBP in ES6](https://maximilianhoffmann.com/posts/object-based-javascript-in-es6) - fluffy
+* * [completish article series, assumes some knowledge in programming](https://davidwalsh.name/javascript-objects) - off-focus, quality?, unecessary
+- https://philipwalton.com/articles/implementing-private-and-protected-members-in-javascript/ - and [PrivateParts](https://github.com/philipwalton/private-parts)
+- http://javascript.crockford.com/private.html
+
+design pattern resources, but pretty big : 
+* https://carldanley.com/javascript-design-patterns/
+* https://github.com/FelipeBB/Design-Patterns-JS
+* http://loredanacirstea.github.io/es6-design-patterns/
+* http://tcorral.github.io/Design-Patterns-in-Javascript/
+* http://shichuan.github.io/javascript-patterns/#design-patterns
 
 
 [TOP](#table-of-contents)
