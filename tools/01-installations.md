@@ -1,8 +1,8 @@
 To Install
 ====
 + Code Editor:
-  + [Sublime Text](https://www.sublimetext.com/3 "Sublime Text")
-  + [Visual Studio Code](https://code.visualstudio.com/ "Visual Studio Code")
+  + [Sublime Text](https://www.sublimetext.com/3 "Sublime Text") (used by Evan)
+  + [Visual Studio Code](https://code.visualstudio.com/ "Visual Studio Code") (used by Rien)
   + [Atom](https://atom.io/ "Atom")
   + if you're using something else and you're comfortable with it, no problem
 
