@@ -58,5 +58,33 @@ And finally, you will set up a project with Git and this will serve as a templat
 * Define what kind of program Git is
 * Describe the differences between Git and a text editor in terms of what they save and their record keeping
 * Describe whether Git and GitHub work at a local or remote level
-* Describe why Git is useful for an individual developer and a team of developers
+* Describe why Git is useful for an individual developer and a team of developers    
+___   
 
+
+Study resources:
+* [Git and Github in plain English](https://blog.red-badger.com/blog/2016/11/29/gitgithub-in-plain-english).  Out standing overview.
+* Complete [git workflow and overview](https://www.vikingcodeschool.com/web-development-basics/getting-to-know-git).
+* The [git workflow cheatsheet](https://github.com/adrianholovaty/git_workflow) to git.  All the commands you need for our workflow.
+
+* Derek Banas' [introduction videos](https://www.youtube.com/watch?v=r63f51ce84A), if you're into videos.  
+* A little [history](https://www.youtube.com/watch?v=1h9_cB9mPT8&feature=youtu.be&t=13s)
+* Comprehensive [git CheatSheet] from Tiimgreen(https://github.com/tiimgreen/github-cheat-sheet).
+* Learn [git tagging](http://alblue.bandlem.com/2011/04/git-tip-of-week-tags.html).  
+* Another great resource for understanding tags in git (https://www.youtube.com/watch?v=Yvy5PijsVZw)
+* [Some common tasks](http://jlord.us/git-it/)
+
+
+Practice resources: 
+* The best place to [practice git branching](http://learngitbranching.js.org/).
+* A [CLI game](https://www.git-game.com).  Play is learning.
+* For the very technical, this site helps you learn Git by [building Git](http://kushagragour.in/blog/2014/01/build-git-learn-git/) - super cool
+* [Git Calisthenics](http://www.vikingcodeschool.com/web-development-basics/git-calisthenics).
+
+THE resource: 
+* I you REALLY want to know [how git works](https://www.youtube.com/watch?v=1ffBJ4sVUb4&list=TLj1nt5nzukA8). 
+  
+Practice projects:
+1. [basics](https://github.com/jankeLearning/content-md/git/project-1-basics.md)  
+2. [branching](https://github.com/jankeLearning/content-md/git/project-2-branching.md)  
+3. [undoing commits](https://github.com/jankeLearning/content-md/git/project-3-decommitting.md)  

@@ -85,6 +85,7 @@ Other resources:
 * [a nice op-ed](https://www.martinfowler.com/bliki/CodeAsDocumentation.html)
 * THE complete guide to [self-documenting code](http://wiki.c2.com/?SelfDocumentingCode)
 * [another article](https://onextrapixel.com/10-principles-for-keeping-your-programming-code-clean/)  
+* [Airbnb style guid](https://github.com/airbnb/javascript)  
 * [Watch and Code](https://watchandcode.com/p/premium). Gordon teaches reading code, but costs a little.
  ___
 ### Bonus Section - LITERATE PROGRAMMING
