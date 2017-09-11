@@ -84,8 +84,9 @@ Other resources:
 * [general frontend tips](https://onextrapixel.com/10-principles-for-keeping-your-programming-code-clean/)
 * [a nice op-ed](https://www.martinfowler.com/bliki/CodeAsDocumentation.html)
 * THE complete guide to [self-documenting code](http://wiki.c2.com/?SelfDocumentingCode)
-* [another article](https://onextrapixel.com/10-principles-for-keeping-your-programming-code-clean/)
-___
+* [another article](https://onextrapixel.com/10-principles-for-keeping-your-programming-code-clean/)  
+* [Watch and Code](https://watchandcode.com/p/premium). Gordon teaches reading code, but costs a little.
+ ___
 ### Bonus Section - LITERATE PROGRAMMING
 If you take this concept to it's absurd conclusion you arrive at something called __Literate Programming__.  In literate programming, the reader comes first and the computer second.  A 'literate program' reads and looks like a story with code snippets where you would expect illustrations. We won't talk about this paradigm in class but it's worth a look if you're interested
 
