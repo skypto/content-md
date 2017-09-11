@@ -15,7 +15,7 @@ To Install
 
 + [Git](https://git-scm.com/) (Only if you're on a Windows. Should already be installed on Mac/Linux)
 
-All downloaded? Great! You now have one badass development environment!!
+All downloaded? Great! You now have one badass development environment!
 
 ---
 ##### WORTH CONSIDERING
