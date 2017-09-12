@@ -45,7 +45,7 @@ THE resource:
 * I you REALLY want to know [how git works](https://www.youtube.com/watch?v=1ffBJ4sVUb4&list=TLj1nt5nzukA8). 
   
 Practice projects:
-1. [basics](https://github.com/jankeLearning/content-md/git/project-1-basics.md)  
-2. [branching](https://github.com/jankeLearning/content-md/git/project-2-branching.md)  
-3. [undoing commits](https://github.com/jankeLearning/content-md/git/project-3-decommitting.md)    
+1. [basics](https://github.com/jankeLearning/content-md/blob/master/git/project-1-basics.md)  
+2. [branching](https://github.com/jankeLearning/content-md/blob/master/git/project-2-branching.md)  
+3. [undoing commits](https://github.com/jankeLearning/content-md/blob/master/git/project-3-decommitting.md)    
 
