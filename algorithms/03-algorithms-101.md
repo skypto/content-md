@@ -14,13 +14,8 @@ ___
 * [Short article introudction](https://code.tutsplus.com/tutorials/understanding-the-principles-of-algorithm-design--net-26561).  Example-based, quite good.
 * [Deeper introduction](http://algorithms.openmymind.net) with entries on several searches and data types, including some we will cover.  Everything outside of what we will cover is more advanced.
 * [via sorting and data structures](https://medium.com/@yanganif/tackling-javascript-algorithms-66f1ac9770dc)
-* [khan academy](https://www.khanacademy.org/computing/computer-science/algorithms#asymptotic-notation).  Deeper and longer than NECESSARY for class. but still pretty good
-* [many examples and data-structure libraries](http://javascript-html5-tutorial.com/algorithms-and-data-structures-in-javascript.html)
 * [CodeMonk](https://www.hackerearth.com/fr/practice/codemonk/).  Brilliant.
 * [hackerearth data structure](https://www.hackerearth.com/fr/practice/data-structures/arrays/1-d/tutorial/)
 * [hackerearth index page](https://www.hackerearth.com/fr/practice/)    
-* [Open your mind!](http://algorithms.openmymind.net)
-* Completer guides to this stuff
-    * https://github.com/nzakas/computer-science-in-javascript  
-    * https://www.rithmschool.com/courses/javascript-computer-science-fundamentals  
-    * https://github.com/rithmschool/javascript_computer_science_exercises  
+* [Open your mind!](http://algorithms.openmymind.net)  
+* [pseudocode and algorithms](https://www.youtube.com/watch?v=6hfOvs8pY1k)   

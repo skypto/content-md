@@ -1,45 +1,120 @@
 # Abstractions
-
-write a script
-
-wrap it in a function
-
-use the function in a script
-
-put the script in a function 
-
-...
-
-this is abstraction
+[example 1](#lead-by-example)
+[example 2](#lead-by-another-example)
+[Conclusion](#abstraction)
+[Resources](#resources)
 
 ___
+### Lead by example
+These four examples are wrapping the same functionality in more and more layers of abstraction:
+0. A little script that takes 4 command line args and logs them.
+    ```js
+    var cli_args = process.argv.slice(2);
+    console.log(cli_args[0]);
+    console.log(cli_args[1]);
+    console.log(cli_args[2]);
+    console.log(cli_args[3]);
+    ```
+1. Wrap all those in a for loop.
+    ```js
+    var cli_args = process.argv.slice(2);
+    for(var i = 0; i < 4; i++) {
+        console.log(cli_args[i]);
+    };
+    ```
+2. Make that into a function.
+    ```js
+    function print_four_items(arg_array) {
+        for(var i = 0; i < 4; i++) {
+            console.log(cli_args[i]);
+        };
+    };
+    ```
+3. Make that funcion general purpose.
+    ```js
+    function print_array(arg_array) {
+        for (var index in arg_array) {
+            console.log(arg_array[index])
+        };
+    };
+    ```
+___
+### Lead by another example
+This series builds abstractions on top of abstractions. 
+0. A script to concatinate two args.
+    ```js
+    var string_arg_1 = process.argv.slice(2)[0];
+    var string_arg_2 = process.argv.slice(2)[1];
+    var new_string = string_arg_1 + ' ' + string_arg_2;
+    /// ---------------- becomes ---------------- ///
+    function combine_two_strings(arg_1, arg_2) {
+        var new_string = string_arg_1 + ' ' + string_arg_2;
+        return new_string;
+    };
+    ```
+1. a script to set a string as a property in a new object.
+    ```js
+    var new_obj = {};
+    new_obj.prop = combine_two_strings(process.argv.slice(2)[0], process.argv.slice(2)[1]);
+    /// ---------------- becomes ---------------- ///
+    function build_obj_abstraction(arg_1, arg_2) {
+        var new_obj = {};
+        new_obj.prop = combine_two_strings(arg_1, arg_2);   
+        return new_obj
+    };
+    ```
+2. A script using the _abstraction_ defined above.  This script takes two people and marries them, hyphenated.
+    ```js
+    var person_1 = { name: 'alex', surname: 'rodriguez' };
+    var person_2 = { name: 'sam', surname: 'gopher' };
+    var new_person_1 = {};
+    // create new person_1
+    new_person_1 = args_to_prop_abstraction(person_1.surname, person_2.surname);
+    new_person_1.surname = new_person_1.prop;
+    delete new_person_1.prop;
+    new_person_1.name = person_1.name;
+    // create new person_2
+    new_person_2 = args_to_prop_abstraction(person_1.surname, person_2.surname);
+    new_person_2.surname = new_person_2.prop;
+    delete new_person_2.prop;
+    new_person_2.name = person_2.name;
+    /// ---------------- becomes ---------------- ///
+    function marry_two_people(person_1, person_2) {
+        // all that stuff above
+        return [new_person_1, new_person_2];
+    };
+    ```
+3. From dust we have come, and to dust we shall return.
+    ```js
+    var main_charecter = {};
+    main_charecter.born = true;
+    main_charecter.can_walk = true;
+    main_charecter.finished_college = true;
+    main_charecter = marry_two_people(spouse, main_charecter)[1];
+    main_charecter.married = true;
+    main_charecter.old = true;
+    main_charecter.dead = true;
+    for (var prop of main_charecter) {
+        delete main_charecter.prop;
+    };
+    /// ---------------- becomes ---------------- ///
+    function life(empty_object) {
+        // all the code above
+        return main_charecter;
+    };
+    ```
+In the first example, a simple script was wrapped in a function.  This allows the next example to do everything the first example did without caring how it happens.  
+In the second example, a simple script was wrapped in a function.  This allows the next example to do everything the first example did without caring how it happens.
+e t c . . .
+___
+# ABSTRACTION
+This is abstraction, everything in programming is abstraction.  jQuery, Express, CSS, they are all tools someone else built so you can make cool stuff without worrying about how it's implemented.  This is largely a good thing, but has a down-side.
 
-pitfalls of abstraction:
-	native js methods
-	.1 + .2
+The downside is that you can't "figure out" how things work.  With pure JS you can read through it and study it to figure out what the code does.  When reading an Express project or seeing jQuery for the first time, it would takes months of console-logging to figure out how things work. Reading the source code wouldn't be any more productive.  The best way to learn a library is to listen to the person who wrote it.
 
+Documentaiton is the developer's way to tell you how to use their code - args, return values, behavior.  The modules we'll be using in class have good documentation.  Next week when you're struggling with the build project, remind yourself you're learning to use an abstraction someone else wrote for you.
+___
+## Resources
 
-
-
-
-> _Abstraction_ :  keep this?  probs not
-The process of considering something independently of its associations, attributes, or concrete accompaniments.   - Mr. MacDictionary
-
-
-Whenever you write a function, or assign a name to a variable you are writing your own abstractions
-
-You write with a pen but don't know the chemistry that causes the ink to stick to the paper.  
-
-You can't deduce how these things work, the scientific method is a terrible idea in programming.  read the documentation - if its any good someone who knows the tools better than you will explain how it works.
-
-In the world of programming, everything is an abstraction - a simplification of something more fundamental and more complex.  Assembly code is an abstraction over machine code. Machine code is an abstraction over electrical currents in your computer. JS is an abstraction over machine (though perhaps a few layers up).  jQuery is an abstraction over JS.  Express is an abstraction over JS. Axios is an abstraction over fetch. Nothing is 'natural'.  Every inch of JS, every library you use, every application or runtime is built from smaller pieces, by a human, to make a particular task easier for _you_.
-
-This is the purpose of abstractions, to make something easier.  You are here to build web apps, but probably will never learn to parse HTTP or write network protocol.  You're writing in JS but will probably never learn to code in machine.  Very few people, if anyone, know how everything in a computer or in the internet works.  Everyone involved understands how to use their tools (Microsoft Word, Node.js, Mac OS), and rely on other people to provide them with those tools.  We call these tools __abstractions__.
-
-
-
-
-Jeff Goodell: Would you explain, in simple terms, exactly what object-oriented software is?
-Steve Jobs: Objects are like people. They’re living, breathing things that have knowledge inside them about how to do things and have memory inside them so they can remember things. And rather than interacting with them at a very low level, you interact with them at a very high level of abstraction, like we’re doing right here.
-Here’s an example: If I’m your laundry object, you can give me your dirty clothes and send me a message that says, “Can you get my clothes laundered, please.” I happen to know where the best laundry place in San Francisco is. And I speak English, and I have dollars in my pockets. So I go out and hail a taxicab and tell the driver to take me to this place in San Francisco. I go get your clothes laundered, I jump back in the cab, I get back here. I give you your clean clothes and say, “Here are your clean clothes.”
-You have no idea how I did that. You have no knowledge of the laundry place. Maybe you speak French, and you can’t even hail a taxi. You can’t pay for one, you don’t have dollars in your pocket. Yet I knew how to do all of that. And you didn’t have to know any of it. All that complexity was hidden inside of me, and we were able to interact at a very high level of abstraction. That’s what objects are. They encapsulate complexity, and the interfaces to that complexity are high level.
+* [The art of abstraction](https://www.youtube.com/watch?v=p7nGcY73epw)
+* [Near to the metal](https://www.youtube.com/watch?v=uNuFVq5QeRk) - some history

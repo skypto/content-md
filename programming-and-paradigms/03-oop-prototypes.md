@@ -169,4 +169,7 @@ http://js4py.readthedocs.io/en/latest/object-tree.html
 some simplish challenges
 [TOP](#table-of-contents)
 ___
+### NLS Resources
+* [Advanced ES6 Literal stuff](http://2ality.com/2015/09/proto-es6.html)
+* [Defining and Setting properties](http://2ality.com/2012/08/property-definition-assignment.html)
 ___
