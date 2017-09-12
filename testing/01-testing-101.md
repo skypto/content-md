@@ -7,7 +7,8 @@
 * [Test Suites](#test-suites)
 * [Minimal Passing Functions](#minimal-passing-functions)
 * [Gradual Refactoring](#gradual-refactoring)
-* [BDD, TDD](#bdd-and-tdd)
+* [BDD, TDD](#bdd-and-tdd)  
+* [An Exercise](#exercise)  
 ___
 ## Intro
 
@@ -343,3 +344,7 @@ That's all on testing for now.
 
 [TOP](#testing-101)
 ___
+
+## Exercise  
+  
+* [Simplest Passing Functions](https://github.com/jankeLearning/content-code/tree/master/Week%2001/simplestPassingFuncs)  

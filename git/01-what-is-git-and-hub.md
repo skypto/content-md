@@ -60,7 +60,9 @@ And finally, you will set up a project with Git and this will serve as a templat
 * Describe whether Git and GitHub work at a local or remote level
 * Describe why Git is useful for an individual developer and a team of developers    
 ___   
-
+## SSH keys
+[a how and why to article](https://jdblischak.github.io/2014-09-18-chicago/novice/git/05-sshkeys.html)
+___
 
 Study resources:
 * [Git and Github in plain English](https://blog.red-badger.com/blog/2016/11/29/gitgithub-in-plain-english).  Out standing overview.
