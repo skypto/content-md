@@ -45,7 +45,7 @@ getData(userData)
 getData(userData).then(result => printdata(result)).catch(error => error)  // much neater
 ```
 
-<img src="https://www.google.be/imgres?imgurl=https://mdn.mozillademos.org/files/8633/promises.png&imgrefurl=https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise&h=297&w=801&tbnid=lU8YHMKZ5uaoLM:&tbnh=78&tbnw=211&usg=__eF1Bbb0o_NOekpMN7DEobYN0VBQ=&vet=10ahUKEwiF89n18N3VAhWNLlAKHa1jCrkQ9QEIKjAA..i&docid=-0TFsZsXOAec5M&sa=X&ved=0ahUKEwiF89n18N3VAhWNLlAKHa1jCrkQ9QEIKjAA">
+![](https://mdn.mozillademos.org/files/8633/promises.png)
 
 ### Promises vs Callbacks
 Unlike old-style passed-in callbacks, a promise comes with some guarantees:
