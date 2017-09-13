@@ -1,8 +1,8 @@
 To Install
 ====
 + Code Editor:
-  + [Sublime Text](https://www.sublimetext.com/3 "Sublime Text")
-  + [Visual Studio Code](https://code.visualstudio.com/ "Visual Studio Code")
+  + [Sublime Text](https://www.sublimetext.com/3 "Sublime Text") (used by Evan)
+  + [Visual Studio Code](https://code.visualstudio.com/ "Visual Studio Code") (used by Rien)
   + [Atom](https://atom.io/ "Atom")
   + if you're using something else and you're comfortable with it, no problem
 
@@ -15,7 +15,7 @@ To Install
 
 + [Git](https://git-scm.com/) (Only if you're on a Windows. Should already be installed on Mac/Linux)
 
-All downloaded? Great! You now have one badass development environment!!
+All downloaded? Great! You now have one badass development environment!
 
 ---
 ##### WORTH CONSIDERING

@@ -19,7 +19,7 @@ You have already begun your journey towards self-documenting code and you didn't
  ___
  ### Rules of Thumb
  Structural:
- * Place all the 'workings' of your app in one place.  With good naming, this can make your app read like a story. (see example) 
+ * Place all the 'workings' of your app in one place.  This means function calls, important variable assignments (or reassignment), and any other lines crucial to understanding your code.   With good naming, this can make your app read like a continuous story instead of a bunch of sentences split up through a phone book. (see example) 
  * Use single-purpose, pure functions with simple, understandable behavior.
  * Have a helpful directory structure
  * Within a single file - organize variables, functions, objects, ... in a way that makes sense so you don't have to rescan the whole file all the time.
@@ -46,7 +46,7 @@ This is overkill for code that only adds two numbers, but you get the point. In 
  * ```javascript
     var command_line_args = process.argv.slice(2);
     var first_arg = command_line_args[0];
-    var second_arg = command_line_args[0];
+    var second_arg = command_line_args[1];
     function check_input_type(input, expected_type) {
             // return true or false
         };
@@ -86,12 +86,13 @@ Other resources:
 * THE complete guide to [self-documenting code](http://wiki.c2.com/?SelfDocumentingCode)
 * [another article](https://onextrapixel.com/10-principles-for-keeping-your-programming-code-clean/)  
 * [Airbnb style guid](https://github.com/airbnb/javascript)  
-* [Watch and Code](https://watchandcode.com/p/premium). Gordon teaches reading code, but costs a little.
+* [Watch and Code](https://watchandcode.com/p/premium). Gordon teaches reading code, but costs a little.  
+* [chaining methods to write sentences](http://javascriptissexy.com/beautiful-javascript-easily-create-chainable-cascading-methods-for-expressiveness/)  
  ___
 ### Bonus Section - LITERATE PROGRAMMING
 If you take this concept to it's absurd conclusion you arrive at something called __Literate Programming__.  In literate programming, the reader comes first and the computer second.  A 'literate program' reads and looks like a story with code snippets where you would expect illustrations. We won't talk about this paradigm in class but it's worth a look if you're interested
 
 Literate resources:
-* [A tool for writing literate programs](https://github.com/zyedidia/Literate).  This repo is a CLI that allows you to write your program in markdown with snippets of JS interspersed.  It will then compile the markdown into JS.  What's super cool about this tool is you can use it for programming in any language.  The examples are in C and I bet you could still understand thim.
+* [A tool for writing literate programs](https://github.com/zyedidia/Literate).  This repo is a CLI that allows you to write your program in markdown with snippets of JS interspersed.  It will then compile the markdown into JS.  What's super cool about this tool is you can use it for programming in any language.  The examples are in C and I bet you could still understand them.
 * [The original paper by proposing Literate Programming](http://www.literateprogramming.com/knuthweb.pdf).  [Donald Knuth](http://www-cs-faculty.stanford.edu/~knuth/) came up with the idea.  He's brilliant. Awards have been invented so he could recieve them.  
 

@@ -60,7 +60,9 @@ And finally, you will set up a project with Git and this will serve as a templat
 * Describe whether Git and GitHub work at a local or remote level
 * Describe why Git is useful for an individual developer and a team of developers    
 ___   
-
+## SSH keys
+[a how and why to article](https://jdblischak.github.io/2014-09-18-chicago/novice/git/05-sshkeys.html)
+___
 
 Study resources:
 * [Git and Github in plain English](https://blog.red-badger.com/blog/2016/11/29/gitgithub-in-plain-english).  Out standing overview.
@@ -85,6 +87,6 @@ THE resource:
 * I you REALLY want to know [how git works](https://www.youtube.com/watch?v=1ffBJ4sVUb4&list=TLj1nt5nzukA8). 
   
 Practice projects:
-1. [basics](https://github.com/jankeLearning/content-md/git/project-1-basics.md)  
+1. [basics](https://github.com/jankeLearning/content-md/git/project-1-basics.md)  // dead link 
 2. [branching](https://github.com/jankeLearning/content-md/git/project-2-branching.md)  
 3. [undoing commits](https://github.com/jankeLearning/content-md/git/project-3-decommitting.md)  

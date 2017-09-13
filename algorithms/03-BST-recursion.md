@@ -154,7 +154,8 @@ Like with algorithms, recursion is a tricky topic.  Take a look through all of t
 * [Code Academy](https://www.codecademy.com/courses/javascript-lesson-205/0/1) exercises
 * [A search of FreeCodeCamp for 'Recursion'](https://medium.freecodecamp.org/search?q=recursion)
 * [On tail calls](https://medium.com/functional-javascript/recursion-282a6abbf3c5)
-* [Simpler video with good animations](https://www.youtube.com/watch?v=FyHloXKnPWc). Loops vs. Recursion
+* [Simpler video with good animations](https://www.youtube.com/watch?v=FyHloXKnPWc). Loops vs. Recursion  
+* [Tail calls in es6](http://jimrottinger.github.io/es6-tail-call-optimization/)  
 
 ___
 ### Next Steps

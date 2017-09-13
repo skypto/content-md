@@ -21,10 +21,6 @@ I would recommend starting with **Bootstrap**. It's easy to understand and use a
 
 Optionally you can look into **Semantic-UI** or **Materialize**, but only if you feel comfortable enough designing websites with CSS.
 
-Project
-----
-link To project Odin
-
 External Resources
 ----
 
