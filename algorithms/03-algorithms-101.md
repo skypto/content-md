@@ -13,9 +13,11 @@ ___
 
 * [Short article introudction](https://code.tutsplus.com/tutorials/understanding-the-principles-of-algorithm-design--net-26561).  Example-based, quite good.
 * [Deeper introduction](http://algorithms.openmymind.net) with entries on several searches and data types, including some we will cover.  Everything outside of what we will cover is more advanced.
-* [via sorting and data structures](https://medium.com/@yanganif/tackling-javascript-algorithms-66f1ac9770dc)
+* [introduction via sorting and data structures](https://medium.com/@yanganif/tackling-javascript-algorithms-66f1ac9770dc)
 * [CodeMonk](https://www.hackerearth.com/fr/practice/codemonk/).  Brilliant.
-* [hackerearth data structure](https://www.hackerearth.com/fr/practice/data-structures/arrays/1-d/tutorial/)
+* [hackerearth data structures](https://www.hackerearth.com/fr/practice/data-structures/arrays/1-d/tutorial/)
 * [hackerearth index page](https://www.hackerearth.com/fr/practice/)    
 * [Open your mind!](http://algorithms.openmymind.net)  
-* [pseudocode and algorithms](https://www.youtube.com/watch?v=6hfOvs8pY1k)   
+* [pseudocode and algorithms](https://www.youtube.com/watch?v=6hfOvs8pY1k) 
+* [a full course, free](https://www.rithmschool.com/courses/javascript-computer-science-fundamentals), [and their exercises](https://github.com/rithmschool/javascript_computer_science_exercises)  
+* [Cool guy's home page](http://tivrama.github.io)
