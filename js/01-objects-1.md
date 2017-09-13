@@ -148,6 +148,6 @@ Resources
 Exercises
 ----
 
-+ clone the whole repo and solve week1/day4\_objects: https://github.com/RienCosyns/Elium-exercises/tree/master/week%201/day4_objects
++ clone [this repo](https://github.com/RienCosyns/objects)
 + Go over [bank account example](https://github.com/jankeLearning/content-code/tree/master/Week%2001/objects). Go only to the next one once you understand what each script does.
 + wonderful video: https://www.youtube.com/watch?v=rlLuL3jYLvA
