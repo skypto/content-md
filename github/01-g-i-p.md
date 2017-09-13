@@ -1,5 +1,5 @@
 
-# Gists, Pull Requests, Issues            
+## Gists, Pull Requests,  & Issues
 
 We will be doing almost everything on GitHub.  GitHub comes with many great tools for collaboration.  These are the elementals.
 ___
