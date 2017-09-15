@@ -112,7 +112,7 @@ obj5.b.c++;
 console.log(obj4.b) // will now return {c: 3}!!!
 ```
 
-So Object.assign makes a clone of a object with its enumerables and its properties. However, nested objects have their own addresses in memory. So even after cloning, the nested objects are still pointing to the same address and the original one.
+So Object.assign makes a clone of a object with its enumerables and its properties. However, nested objects have their own addresses in memory. So even after cloning, the nested objects are still pointing to the same address of the original one.
 
 
 External resources
