@@ -44,6 +44,7 @@ ___
 ### An Example
 This is overkill for code that only adds two numbers, but you get the point. In more complicated or abstract programs the time spent writing clear code will more than pay off the next time you open that file:
  * ```javascript
+    // -----------  Define things in one place ------------ //
     var command_line_args = process.argv.slice(2);
     var first_arg = command_line_args[0];
     var second_arg = command_line_args[1];
@@ -56,7 +57,8 @@ This is overkill for code that only adds two numbers, but you get the point. In 
     function display_to_user(result) {
             // console log result
         };
-    // ---------------------------------------- //
+
+    // ------------- Use the stuff you defined elsewhere --------------- //
     var first_arg_is_valid = check_input_type( first_arg );
     var second_arg_is_valid = check_input_type( second_arg );
     if (first_arg_is_valid && second_arg_is_valid) {
