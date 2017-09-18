@@ -87,6 +87,8 @@ Some benefits to using these patterns:
 * _Composition_ is a technique for creating new objects by combining two or more objects inside of a pure function.  In go two or more objects, out comes a new object with all the old objects' properties copied into it. The new object is in no way connected to the factory, it's '\_\_proto\_\_' points to the default 'Object.prototype'.  
 * This design pattern combines incoming objects with a predetermined set of properties, 'extending' the original object to include a new set of superpowers:
     ```js
+    // are these pure functions?
+    
     function spiderify_1(arg_obj) {
         var spider = {
             spider: true
@@ -168,7 +170,8 @@ ___
 * [another way of composing](https://gist.github.com/Jiert/efa5a30200d1ebb62122)
 * [configurable facotry](http://dealwithjs.io/design-patterns-the-factory-pattern-in-javascript/)
 * [Mr. Funfunfunction on factories](https://www.youtube.com/watch?v=ImwrezYhw4w)
-* [A nice article](https://atendesigngroup.com/blog/factory-functions-javascript)
+* [A nice article](https://atendesigngroup.com/blog/factory-functions-javascript)  
+* [js.info](https://javascript.info/object#copying-by-reference)
 
 [TOP](#factories-and-composition)
 ___

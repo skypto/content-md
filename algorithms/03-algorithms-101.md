@@ -20,4 +20,6 @@ ___
 * [Open your mind!](http://algorithms.openmymind.net)  
 * [pseudocode and algorithms](https://www.youtube.com/watch?v=6hfOvs8pY1k) 
 * [a full course, free](https://www.rithmschool.com/courses/javascript-computer-science-fundamentals), [and their exercises](https://github.com/rithmschool/javascript_computer_science_exercises)  
-* [Cool guy's home page](http://tivrama.github.io)
+* [Cool guy's home page](http://tivrama.github.io)  
+* http://giocc.com/a-gentle-introduction-to-algorithms-for-web-developers.html  
+* http://stackoverflow.com/questions/487258/plain-english-explanation-of-big-o  
