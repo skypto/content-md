@@ -1,5 +1,8 @@
 # REACT
 
+oop components, fp applications.
+the view from inside a component is oop, the view from outside is pf
+
 paragraph of why and what
 
 # resources
