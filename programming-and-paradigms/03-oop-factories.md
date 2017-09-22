@@ -89,28 +89,28 @@ Some benefits to using these patterns:
     ```js
     // are these pure functions?
     
-    function spiderify_1(arg_obj) {
-        var spider = {
-            spider: true
+    function butterify_1(arg_obj) {
+        var butter = {
+            butter: true
         };
-        return Object.assign(arg_obj, spider);
+        return Object.assign(arg_obj, butter);
     };
     
-    function spiderify_2(arg_obj) {
-        return Object.assign(arg_obj, { spider: true });
+    function butterify_2(arg_obj) {
+        return Object.assign(arg_obj, { butter: true });
     };
     
-    function spiderify_3(arg_obj) {  // I think this one is the most readable
+    function butterify_3(arg_obj) {  
         var new_obj = Object.assign(arg_obj, {
-                    spider: true
+                    butter: true
                 });
         return new_obj;
     };
     
-    var pig = {
-        pig: true
+    var fly = {
+        fly: true
     };
-    var spiderpig = spiderify_3(pig);
+    var butterfly = butterify_3(fly);
     
     ```
     * Composed objects are more appropriate for functional programming than inheriting objects.  A composed object will always behave the same no matter what happens in the app (unless you change it directly). They are not susceptible to _side effects_ if their prototype object is modified or they are moved to a different context.  

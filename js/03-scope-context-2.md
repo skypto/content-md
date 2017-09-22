@@ -71,7 +71,7 @@ var myObj = {
     console.log(this); // this = myObj
     setTimeout(function() {
       console.log(this.name); // this = window; will return undefined
-	}, 500);
+  }, 500);
   }
 };
 ```
@@ -90,7 +90,7 @@ var myObj = {
     var self = this
     setTimeout(function() {
       console.log(self.name); // self is a reference to the outer this.
-	}, 500);
+  }, 500);
   }
 };
 ```
@@ -155,6 +155,36 @@ let students2 = {
     }
 }
 ```
+
+## Apply and Call
+
+__Apply, call : bind :: eating : canning__
+
+Bind returns a new function that can be used later, call and apply execute the function immediately with the specified context.  
+[The difference between call and apply is the arguments they take.](https://hangar.runway7.net/javascript/difference-call-apply)  Otherwise they behave the same way.
+
+``` js
+var object_1 = {
+    name: 'one',
+    get_name: function() {
+            return this.name;
+        }
+}; 
+
+var object_2 = {
+    name: 'two
+};
+
+var same_function_new_context = object_1.get_name.bind(object_2);
+
+// because get_name takes no arguments, call and apply are interchangeable
+var object_2_name_apply = object_1.print_name.apply(object_2);
+var object_2_name_call = object_1.print_name.call(object_2);
+
+```
+
+
+___
 
 
 
