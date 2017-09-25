@@ -164,10 +164,12 @@ That sums up the basics of Prototypical Inheritance.  You have the lookup chain,
 
 [TOP](#table-of-contents)
 ___
-### Prototype Exercises
-http://js4py.readthedocs.io/en/latest/object-tree.html
-some simplish challenges  
-day 4 # 16  
+### Externals
+
+[cli exercises](https://github.com/sporto/planetproto)    
+
+[a resource](http://js4py.readthedocs.io/en/latest/object-tree.html)  
+
 [TOP](#table-of-contents)
 ___
 ### NLS Resources

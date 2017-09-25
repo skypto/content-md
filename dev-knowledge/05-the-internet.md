@@ -1,4 +1,4 @@
-How Does the Web Work?
+ How Does the Web Work?
 ====
 
 Before you can understand how to program the web, you need to understand the web itself on a more granular level than you probably do now. Some of this stuff is necessary just to have a more holistic understanding of the ecosystem in which you will be working (and to not sound like a total newbie when talking to other developers about it).
@@ -10,6 +10,13 @@ So without further ado, here's a bunch of great content to get a better understa
 3. Read up on the [differences](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Pages_sites_servers_and_search_engines#Summary) between a webpage, web server and a search engine.
 4. Watch this [Google short](https://www.youtube.com/watch?v=BrXPcaRlBqo&feature=youtu.be) explaining what a web browser is; then find out what web browser you are using right [now](https://whatbrowser.org/).
 5. Now read about how one part of the web [interacts with another](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works#Clients_and_servers) and [read](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_domain_name#How_does_a_DNS_request_work) or [watch](https://www.youtube.com/watch?v=72snZctFFtA&feature=youtu.be&t=45s) a DNS request in action.
+
+___
+### Protocols
+Just like specs and code, protocols allow computers communicate accross networks.  Everything is communicated by protocols. 
+
+For modern web developers the two most common protocols are JSON and HTTP.  [JSON](https://www.w3schools.com/js/js_json_intro.asp) is javascript object literals where everything is a string.  [HTTP](https://sidewaysdictionary.com/#/term/http) is more complicated, read on.
+___
 
 HTTP: Request/response cycle
 ---

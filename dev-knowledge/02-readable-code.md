@@ -105,7 +105,9 @@ ___
 Mandatory reads:
 1. [avoid comments](https://blog.codinghorror.com/coding-without-comments/)
 2. when you can't, [make sure they help](https://blog.codinghorror.com/when-good-comments-go-bad/)
-3. and certainly learn to know [when they are apropriate](https://blog.codinghorror.com/code-tells-you-how-comments-tell-you-why/)
+3. and certainly learn to know [when they are apropriate](https://blog.codinghorror.com/code-tells-you-how-comments-tell-you-why/)  
+4. [code for the maintainer](http://wiki.c2.com/?CodeForTheMaintainer). [They deserve your respect](https://blog.codinghorror.com/the-noble-art-of-maintenance-programming/)    
+
 
 
 Other resources:
