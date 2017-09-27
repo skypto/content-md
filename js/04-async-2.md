@@ -136,4 +136,5 @@ External Resources
 + https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Promise
 + https://scotch.io/tutorials/javascript-promises-for-dummies
 + http://www.telerik.com/blogs/what-is-the-point-of-promises
-+ https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-promise-27fc71e77261
++ https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-promise-27fc71e77261  
++ [video from flo](https://www.youtube.com/playlist?list=PL4cUxeGkcC9jAhrjtZ9U93UMIhnCc44MH)
