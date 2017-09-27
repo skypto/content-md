@@ -131,7 +131,7 @@ Some benefits to using these patterns:
     ```js
         function n_adic_composer() {
             var new_obj = {};
-            for (var object of arguments) {
+            for (var object in arguments) {
                 new_obj = Object.assign(new_obj, arguments[object]);
             };
             return new_obj;
