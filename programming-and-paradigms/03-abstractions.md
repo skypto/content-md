@@ -1,13 +1,13 @@
 # Abstractions
-[example 1](#lead-by-example)
-[example 2](#lead-by-another-example)
-[Conclusion](#abstraction)
-[Resources](#resources)
+[example 1](#lead-by-example)  
+[example 2](#lead-by-another-example)  
+[Conclusion](#abstraction)  
+[Resources](#resources)  
 
 ___
 ### Lead by example
 These four examples are wrapping the same functionality in more and more layers of abstraction:
-0. A little script that takes 4 command line args and logs them.
+0. A little script that takes 4 command line args and logs them.  
     ```js
     var cli_args = process.argv.slice(2);
     console.log(cli_args[0]);

@@ -118,7 +118,8 @@ Other resources:
 * [another article](https://onextrapixel.com/10-principles-for-keeping-your-programming-code-clean/)  
 * [Airbnb style guid](https://github.com/airbnb/javascript)  
 * [Watch and Code](https://watchandcode.com/p/premium). Gordon teaches reading code, but costs a little.  
-* [chaining methods to write sentences](http://javascriptissexy.com/beautiful-javascript-easily-create-chainable-cascading-methods-for-expressiveness/)   
+* [chaining methods to write sentences](http://javascriptissexy.com/beautiful-javascript-easily-create-chainable-cascading-methods-for-expressiveness/)  
+* [youtube says it](https://www.youtube.com/watch?v=UjhX2sVf0eg)     
 ___
 # Your Assignment
 
