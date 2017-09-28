@@ -51,14 +51,40 @@ This is because your app is __event driven__.  It sits idle until the user promp
 ___
 ### A Checklist
 
+Use this checklist to grade your own project.  
+If your objects do anything that is not on this list your code is probably wrong.
+
+| __M__  	|   __V__	| __C__  	| __L__  	|  __H__   	|
+|:---:	|:---:	|:---:	|:---:	|:---:	|
+|   saves data 	|   draws to the UI	|   calls the M, V, L	|   takes in app state	| listens to events   	|
+|   returns data	|   	|   use temporary variables	|   makes decisions	|   cleans user data	|
+|   	|   	|  	|   returns new app state 	|   passes it to controller	|
+| --- | --- | --- | --- | --- |
+| can call itself | can call the UI | can call M, L, V | can call itself | can call controller| 
+
 [TOP](#table-of-contents)
 ___
 ### A Chart 
+
+See how this architecture makes your life easy, you only have to change the L and H to run your project in different environments.
+
+|   |   __M__	|  __V__   	| __C__  	|   __L__	|  __H__ 	|   
+|:---:  |:---:	|:---:	|:---:	|:---:	|:---:	|
+|   Termianl   |    js 	|   console.log	|   js	|   js	|   ternimal args	|
+|   Browser    |  js 	|   DOM stuff	|   js	|   js	|   events	|
+|   Node webapp    |   js	|   EJS	|   js	|   js	|   Express	|
 
 [TOP](#table-of-contents)
 ___
 ### An Example
 
-example code - chaining calc with exchangeable environments - terminal, browser, express res.send - code, specs, 
+[i make perfect code](https://github.com/jankeLearning/content-code/tree/master/Week%2003/mvc-lh-calc)
+
 [TOP](#table-of-contents)
+
+
+
+
+
+
 
