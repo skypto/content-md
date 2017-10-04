@@ -170,6 +170,8 @@ ___
 
 [a resource](http://js4py.readthedocs.io/en/latest/object-tree.html)  
 
+[MDN explains](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Details_of_the_Object_Model)  
+
 [TOP](#table-of-contents)
 ___
 ### NLS Resources
