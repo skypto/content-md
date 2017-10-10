@@ -71,7 +71,7 @@ Here are some more articles about being safe with NPM:
 * [the __leftpad__ affair](http://www.haneycodes.net/npm-left-pad-have-we-forgotten-how-to-program/)
 * [I peeked into my node_modules folder ...](https://medium.com/friendship-dot-js/i-peeked-into-my-node-modules-directory-and-you-wont-believe-what-happened-next-b89f63d21558)
 * [_Express_ on using Express](https://expressjs.com/en/advanced/best-practice-security.html)
-* 
+
 
 
 
