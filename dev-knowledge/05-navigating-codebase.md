@@ -34,9 +34,6 @@ ___
 * [youtube search](https://www.youtube.com/results?search_query=how+to+read+javascript+code). push your favorites or add them to the wiki
 * [code search engine](https://cs.chromium.org)
 ___
-### Project
-[Inside Express](https://github.com/jankeLearning/projects/tree/master/06-inside-express)
-___
 ### Counterpoint
 
 [CodingHorror](https://blog.codinghorror.com/when-understanding-means-rewriting/).  From a certain perspective the source code is irrelevant.
