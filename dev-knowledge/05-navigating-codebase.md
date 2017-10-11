@@ -32,7 +32,8 @@ Some good libraries to start with:
 ___
 ### resources
 * [youtube search](https://www.youtube.com/results?search_query=how+to+read+javascript+code). push your favorites or add them to the wiki
-* [code search engine](https://cs.chromium.org)
+* [code search engine](https://cs.chromium.org)  
+* [a toll for reading code](https://github.com/Jianru-Lin/lambda-view)  
 ___
 ### Counterpoint
 
