@@ -25,7 +25,8 @@ The best resoure of all:
 ___
 ### What to read
 
-Some good libraries to start with:
+Some good libraries to start with:  
+* simple-average: [npm](https://www.npmjs.com/package/simple-average), [github](https://github.com/kikobeats/simple-average)  
 * [lodash](https://github.com/lodash/lodash), my recommendation.  It's very well done and you'll need to learn it evetually anyway.
 * [Hashnode recommendations](https://hashnode.com/post/suggest-simple-libraries-to-read-source-code-for-learning-js-ciibz8fji01c7j3xte6q5dmz5)
 * [Reddit recommendations](https://www.reddit.com/r/javascript/comments/2zt8wg/suggestions_for_must_read_javascript_source_code/)
