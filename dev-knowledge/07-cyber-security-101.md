@@ -58,7 +58,9 @@ ___
 ### [Security in Node.js/NPM](https://www.bithound.io/npm-package-security)
 
 One great vulnerability in the Node.js world is open source modules.  A well-built module will be secure - large random numbers are nearly impossible to guess whether or not the source code is exposed.  
+  
 But what if there's one method in mongoose that has a faulty if-statment?  All of a sudden anyone using mongoose in their project is open to attack by a stubborn hacker who read the entire code base.
+  
 What happens when your project contains 30 dependancies, and each dependancy has 15 dependancies?  Any of those dependancies can be updated by their owners at any time.  Or any one of those hundreds of dependacnies could have a tiny security risk you don't even know to look for.
 
 Here is an article about being safe with NPM:
