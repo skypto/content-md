@@ -169,6 +169,8 @@ ___
 [cli exercises](https://github.com/sporto/planetproto)    
 
 [a resource](http://js4py.readthedocs.io/en/latest/object-tree.html)  
+  
+[learn-co](https://github.com/learn-co-curriculum/intro-oo-js)
 
 [MDN explains](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Details_of_the_Object_Model)  
 

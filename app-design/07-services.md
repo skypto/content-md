@@ -1,2 +1,1 @@
-services/config architecture  
-"separation of concerns"
+break your app into mini apps.  
