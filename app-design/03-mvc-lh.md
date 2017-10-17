@@ -80,7 +80,11 @@ ___
 
 [i make perfect code](https://github.com/jankeLearning/content-code/tree/master/Week%2003/mvc-lh-calc)
 
-[TOP](#table-of-contents)
+[TOP](#table-of-contents)  
+___  
+### Articles  
+  
+[this is about layers](http://www.edave.net/2011/03/22/a-layered-node-js-architecture-using-express/)    
 
 
 
