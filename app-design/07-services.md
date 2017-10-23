@@ -6,8 +6,9 @@
 
 ---
 ### Resources
-* [Nodehero](https://blog.risingstack.com/node-hero-node-js-project-structure-tutorial/)  
+* [short, sweet video](https://www.youtube.com/watch?v=CKL3fV5UR8w): must watch
 * [tictactoes 5](https://github.com/jankeLearning/projects/tree/master/tictactoes/5-microservices) - example code.  
 * [a pre-fab app template](https://github.com/snielsson/simple-service-layer-architecture-for-node-express-apps)  
 * [microservices and functional programming](https://thenewstack.io/microservices-node-js/)  
 * [Heavy, advanced, totally worth it](https://addyosmani.com/largescalejavascript/)  
+* [Nodehero](https://blog.risingstack.com/node-hero-node-js-project-structure-tutorial/)  
