@@ -6,7 +6,8 @@
 
 ---
 ### Resources
-* [short, sweet video](https://www.youtube.com/watch?v=CKL3fV5UR8w): must watch
+* [short, sweet video](https://www.youtube.com/watch?v=CKL3fV5UR8w)  
+* [more detailed video](https://www.youtube.com/watch?v=QAvYmDeA-mg)  
 * [tictactoes 5](https://github.com/jankeLearning/projects/tree/master/tictactoes/5-microservices) - example code.  
 * [a pre-fab app template](https://github.com/snielsson/simple-service-layer-architecture-for-node-express-apps)  
 * [microservices and functional programming](https://thenewstack.io/microservices-node-js/)  
