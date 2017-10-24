@@ -84,12 +84,20 @@ Some common constraints when developing software:
 ___
 ## Decomposition
 
-Problem decomposition is central to the programming mindset.  Being able to look at a large problem and understand it as many small problems strung together will make you a better human.
+Problem decomposition is central to problem solving.  Being able to look at a large problem and understand it as many small problems strung together will make you a better human.  
 
-It will also make you a better developer.  
+Some of many advantages:      
+* You have created helpful constraints.  Two smaller problems are easier to approach and will usually result in a higher quality finished product.  
+* Collaboration becomes easier. You can split work with the guarentee that each person's contribution will be valuable.  
+* It can guide the analysis phase.  Often the hardest question is how to start understanding a problem. by first decomposing a new problem, you can skip being confused by how to start.  Decomposing is always worth your time.  
+* Smaller pieces are easier to code.  Decomposing large problems brings them closer to code, making the trasition to a practical solution much simpler.  
+* Apps built of smaller apps are almost always easier to test and maintain.  
+  
+I'm sure there are more benefits to breaking down large problems, but these should be enough to convince you.  
 
-More on this in a bit.
-
+Getting good at this will just take practice.    
+  
+  
 [TOP](#index)
 ___
 ## Collaboration Process
