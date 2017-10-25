@@ -104,7 +104,7 @@ ___
 
 A procedure worth trying out:
 1. Analyze and define the task as a team
-2. Break the problem into smaller pieces
+2. Break the problem into smaller pieces  
 3. Analyze and define the smaller problems as a team
     * Agree on specs where smaller problems meet eachother or the outside world
 4. Delegate the smaller problems to pieces of your team
