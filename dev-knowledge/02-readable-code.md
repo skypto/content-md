@@ -136,5 +136,5 @@ If you take this concept to it's absurd conclusion you arrive at something calle
 
 Literate resources:
 * [A tool for writing literate programs](https://github.com/zyedidia/Literate).  This repo is a CLI that allows you to write your program in markdown with snippets of JS interspersed.  It will then compile the markdown into JS.  What's super cool about this tool is you can use it for programming in any language.  The examples are in C and I bet you could still understand them.
-* [The original paper by proposing Literate Programming](http://www.literateprogramming.com/knuthweb.pdf).  [Donald Knuth](http://www-cs-faculty.stanford.edu/~knuth/) came up with the idea.  He's brilliant. Awards have been invented so he could recieve them.  
-
+* [The original paper by proposing Literate Programming](http://www.literateprogramming.com/knuthweb.pdf).  [Donald Knuth](http://www-cs-faculty.stanford.edu/~knuth/) came up with the idea.  He's brilliant. Awards have been invented so he could recieve them.   
+* [Collaborating with Literate Programming](http://fgiasson.com/blog/index.php/2016/06/09/literate-programming-and-team-development/)

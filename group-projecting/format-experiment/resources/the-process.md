@@ -45,3 +45,7 @@ This is the procedure you will follow as a group durring group project week. Fam
   * complete repository
   * complete landing page
 
+-----------
+
+include 'backlog'  
+include 2.0
