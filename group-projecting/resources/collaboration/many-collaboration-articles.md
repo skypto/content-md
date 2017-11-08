@@ -14,7 +14,7 @@ Far too many articles about working together
   * [quora article](https://www.quora.com/Software-Development-What-communication-skills-do-you-find-to-be-most-important-as-a-Software-Developer)
   * [get over yourself](https://medium.com/@InVisionApp/get-over-yourself-collaboration-is-the-secret-to-great-products-5e602e2b9196)
 * Very human things
-  * [engaged employee pyramid](https://medium.com/@actionableco/how-to-improve-team-performance-one-conversation-at-a-time-9ac33483e5fd)
+  * ["engaged employee" pyramid](https://medium.com/@actionableco/how-to-improve-team-performance-one-conversation-at-a-time-9ac33483e5fd)
   * [communicate towards trust](https://medium.com/@iammichaelwatts/communicate-towards-trust-3b88a1ab3e8b)
   * [building team spirit](https://medium.com/the-neon-way/a-holy-trinity-of-team-performance-2aee66e986e3)
   * [building balanced teams](https://medium.com/javascript-scene/the-essential-guide-to-building-balanced-development-teams-b051a62acc80)
@@ -25,11 +25,6 @@ Far too many articles about working together
   * [stackoverflow question](https://stackoverflow.com/questions/1287844/what-is-a-good-software-development-plan)
   * [capacity planning](https://medium.com/hackerlife/organizing-a-software-development-team-plan-capacities-better-975c62c17124)
   * [conceptual integrity](https://www.quora.com/What-is-conceptual-integrity-in-software-architecture)  
-* User-Focused Development
-  * [Don't make me think](http://ptgmedia.pearsoncmg.com/images/9780321965516/samplepages/0321965515.pdf)
-  * [integrating designers](https://productcoalition.com/7-ways-to-bridge-the-gap-between-design-and-development-e7d23d49373f) 
-  * [penutbutter jelly time](https://medium.com/myplanet-musings/the-peanut-butter-and-jelly-effect-why-designers-and-developers-are-better-together-97c787326876) 
-  * [the future of design](https://medium.com/thinking-design/why-collaboration-is-the-future-of-work-and-what-this-means-for-designers-going-forward-f48c166ded44)  
 * 100x developer  
   * [communicate!](https://medium.com/techspiration-ideas-making-it-happen/communication-how-to-be-a-better-software-developer-869c50767701)
   * [Quora answers](https://www.quora.com/Are-there-engineers-who-are-not-10x-but-100x-or-1000x-as-productive-as-the-average)  
@@ -52,11 +47,6 @@ Far too many articles about working together
 
 
 
-
-  
-  
-  
-  
   
   
   
