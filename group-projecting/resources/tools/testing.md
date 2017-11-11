@@ -1,5 +1,6 @@
 # Testing  
-  
+
+
 to cover:  
 * libraries  
 * automation  
@@ -14,3 +15,4 @@ If you're not into that sort of thing, enjoy the present.  We'll do a lot of thi
 http://evanhahn.com/how-do-i-jasmine/
 
 https://drive.google.com/drive/u/0/folders/0BwUuQZA1mzK5LWgtRldSZTFjb0kww
+

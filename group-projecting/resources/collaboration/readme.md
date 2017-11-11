@@ -4,7 +4,7 @@
 
 [quora, killing it as usual](https://www.quora.com/What-are-the-most-popular-software-development-methods-used-today)
 
-______
+_________
 
 ### AGILE
 
@@ -26,7 +26,7 @@ Across all philosophies is one uniting thread:
         when planning, you take that perspective's side
         when making decisions, you speak from that perspective
 
-________
+_________
 
 ### AUDIENCES
 
