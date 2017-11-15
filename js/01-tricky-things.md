@@ -85,6 +85,36 @@ console.log("After the loop i = " + i);
 
 Let and const are **block scope** variables, which means they only exist in the block within they have been declared. In this case, _i_ will only exist **inside** the loop _block_.
 
+### Identical objects are not the same
+
+```javascript
+var obj1 = {a: 1, b: 2};
+var obj2 = {a: 1, b: 2};
+
+var obj3 = obj1;
+```
+
+If you would compare obj1 to obj2 you'd probably expect Javascript to tell you these are the same. Only, they're not... Separately declared objects, even when their key-value pairs are identical, refer to different addresses in memory. So as far as JS is concerned, these are two different variables.
+
+However, when you use assignment you also duplicate the pointer to the memory block. That's why evaluating `obj3 === obj1` will return as true.
+
+#### Not too deep cloning
+You can use the `Object.assign(object)` to make a clone of an existing object. This could be particularly useful to make sure you're not by accident manipulating the existing object, with nasty bugs as result.
+
+However, this method only goes so far...
+
+```javascript
+var obj4 = {a: 1, b : {c : 2}};
+var obj5 = Object.assign({}, obj4);
+
+obj4 === obj5 // will return false
+obj5.b.c++;
+console.log(obj4.b) // will now return {c: 3}!!!
+```
+
+So Object.assign makes a clone of a object with its enumerables and its properties. However, nested objects have their own addresses in memory. So even after cloning, the nested objects are still pointing to the same address of the original one.
+
+
 External resources
 ----
 

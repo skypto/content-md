@@ -145,7 +145,7 @@ In the previous examples we have set protoypes by directly manipulating the '.\_
         var second_obj = Object.assign(second_obj, first_obj);
         var second_obj; // {second_prop: 2, first_prop: 1}
         ```
-    * This method doesn't actually modify the prototype chain.  It's sort of the oposite of 'create', it combines two or more objects into one.  When you assign one object to another you are literally copying the methods from one object to another. Use '.hasOwnProperty()' to explore the difference between '.assign()' and '.create()'.
+    * This method doesn't actually modify the prototype chain.  It's sort of the opposite of 'create', it combines two or more objects into one.  When you assign one object to another you are literally copying the methods from one object to another. Use '.hasOwnProperty()' to explore the difference between '.assign()' and '.create()'.
     * Knowing when and how to use this one can be tricky to figure out.  We'll address this in the next chapter by recommending and discussing a few _design patterns_.
 * [Object.setPrototypeOf()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/setPrototypeOf): <- click for docs
     * The recommended way to change an object's prototype. Better than resetting '.\_\_proto\_\_' directly:
@@ -164,9 +164,16 @@ That sums up the basics of Prototypical Inheritance.  You have the lookup chain,
 
 [TOP](#table-of-contents)
 ___
-### Prototype Exercises
-http://js4py.readthedocs.io/en/latest/object-tree.html
-some simplish challenges
+### Externals
+
+[cli exercises](https://github.com/sporto/planetproto)    
+
+[a resource](http://js4py.readthedocs.io/en/latest/object-tree.html)  
+  
+[learn-co](https://github.com/learn-co-curriculum/intro-oo-js)
+
+[MDN explains](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Details_of_the_Object_Model)  
+
 [TOP](#table-of-contents)
 ___
 ### NLS Resources

@@ -87,7 +87,8 @@ app.delete("/user/15461/delete", (req, res) => {
 External Resources
 ----
 + Scotch.io tutorial: https://scotch.io/tutorials/build-a-restful-api-using-node-and-express-4
-+ Best practices: https://blog.risingstack.com/10-best-practices-for-writing-node-js-rest-apis/
++ Best practices: https://blog.risingstack.com/10-best-practices-for-writing-node-js-rest-apis/  
++ Simple RESTFUL example: https://github.com/jankeLearning/content-code/tree/master/Week%2005-6/1-simply-cruddy-to-read  
 
 
 Source

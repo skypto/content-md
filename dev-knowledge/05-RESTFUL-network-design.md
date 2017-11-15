@@ -1,1 +1,2 @@
-just that
+Basically, treat your server like a pure function.  The same request will always bring the same response (though the data in the response will change over time).  
+[A google slides](https://docs.google.com/presentation/d/1Mhoj-SHEX-sMSqxlsigBGyEjjxTvAFHP1PHOP3M0N9o/edit#slide=id.g1f8026c0cf_0_35)

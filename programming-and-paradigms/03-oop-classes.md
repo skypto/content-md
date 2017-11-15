@@ -1,4 +1,4 @@
-# OOP - Classes
+# OOP - Classical
 You'll rarely use free-standing inheritance manipulation.  What's more common is to wrap prototype manipulations in a function or other syntax for re-use - to dynamically create similar objects, to manage inheritance chains in real-time, for extended functionality.  
 
 
@@ -21,22 +21,38 @@ ___
 important for reading mozilla documentation, but not the best practice for your own apps
 why avoid them?  because it uses 'this' in confusing ways and needing 'new' makes your code more futurproof. 
 
-constructing constructors
-    factory that sets prototype to outside object
-    facotry that attaches that object to the function
-    constructor - note the subtle differences
-    ```js
-    outerproto
-    function
-    addtoouterproto
-    
-    function.outerproto
-    function
-    addtoouterproto
-    
-    constructor
-    addtoprototype
-    ```
+constructing constructors.  When you use the new keyword in js this is how it really works.  it's got nothing to do with classes or the new keyword in other language.  these examples build from simple funciton to a constructor funciton:  
+```js
+//  -----------  1  -------------  //
+function factory_1(_own_prop, prototype_object) {
+    var new_obj = Object.create(prototype_object);
+    new_obj.own_prop = _own_prop;
+    return new_obj;
+};
+var new_prototype = {inherited_prop: 'yeee'};
+var new_instance_1 = factory_1('yaaa', new_prototype)
+
+//  -----------  2  -------------  //
+function factory_2(_own_prop) {
+    var new_obj = Object.create(factory_2.prototype);
+    new_obj.own_prop = _own_prop;
+    return new_obj;
+};
+var factory_2.prototype.inherited_prop =  'yeee';
+var new_instance_2 = factory_2('yaaa')
+
+//  -----------  3  -------------  //
+function constructor(_own_prop) {
+    // implicitly creates new object and sets __proto__
+    this.own_prop = _own_prop;
+    // implicitly returns the new object
+};
+var constructor.prototype.inherited_prop = 'yeee';
+var new_instance_3 = new constructor('yaaa');
+
+```
+Constructors do not change prototypical inheritance, they're just a native implementation of a convenient design pattern (factory_2).  Once an object has been created from a constructor you can always change it's \_\_proto\_\_ unlike instances in classical languages like ruby.  
+Constructors do a few other subtle things behind the scenes, but for beginning practical purposes they are irrelevant.
 
 ahttps://sangupta007.wordpress.com/2017/02/12/inheritance-tree-in-javascript/
 the diagram, explain it
@@ -50,10 +66,10 @@ ___
 
 ES6 introduced a lovely thing called 'classes'.  
 If you've never programmed before, they will make your life easy as you begin to learn interitance and OOP modeling in JS. (Easy, not better.) 
-If you've already learned how prototypes work in JS you may or may not want to use them, but you'll appreciate the abstraction they provide.  
+If you've already learned how prototypes work in JS you may or may not want to use them, but you'll appreciate the abstraction they provide.   They're essencially just fancy constructors.  
 If you come from a language with true classical inheritance, don't start here.  First learn pure prototypical inheritance then learn how classes work in JS. The name is very misleading, they work nothing like true classes.
 
- Because this syntax hides what is truely happening, we recommend only using classes once you understand what they do behind the scenes when you can say why they're the best solution.
+ Because this syntax hides what is truely happening, we recommend only using classes once you understand what they do behind the scenes when you can say why they're the best solution.  
 
 RESOURCES:
 * [Our progressive examples](https://github.com/jankeLearning/content-code/tree/master/Week%2003/classes)

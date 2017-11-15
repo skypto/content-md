@@ -1,6 +1,6 @@
 # Data Modeling 1
 
-Now that you're separating our apps into MVC you need to store your data separately from where it's displayed.  Your data doesn't need to be stored anything like how it's displayed, it's the view object's responsibilty to make sure our data is readable.  This leaves you free to organize our data however you want; arrays, objects, variables, data-objects, you name it.
+Now that you're separating your apps into MVC you need to store your data separately from everything else.  Your data doesn't need to be stored anything like how it's displayed, it's the view object's responsibilty to make sure our data is readable.  This leaves you free to organize our data however you want; arrays, objects, variables, data-objects, you name it.
 
 After you become comfortable with the idea of a decoupled view and data store, you have much more liberty in designing your apps.  You also have a whole new set of decisions to make - _how to organize, store, and retrieve your data_.
   ___

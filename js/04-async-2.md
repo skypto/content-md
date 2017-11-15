@@ -50,9 +50,9 @@ getData(userData).then(result => printdata(result)).catch(error => error)  // mu
 ### Promises vs Callbacks
 Unlike old-style passed-in callbacks, a promise comes with some guarantees:
 
-+ Callbacks will never be called before the completion of the current run of the JavaScript event loop.
-+ Callbacks added with .then even after the success or failure of the asynchronous operation, will be called, as above.
-+ Multiple callbacks may be added by calling .then several times, to be executed independently in insertion order.
++ Promises will never be called before the completion of the current run of the JavaScript event loop.
++ Promises added with .then even after the success or failure of the asynchronous operation, will be called, as above.
++ Multiple promises may be added by calling .then several times, to be executed independently in insertion order.
 
 But the most immediate benefit of promises is **chaining**.
 
@@ -136,4 +136,5 @@ External Resources
 + https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Promise
 + https://scotch.io/tutorials/javascript-promises-for-dummies
 + http://www.telerik.com/blogs/what-is-the-point-of-promises
-+ https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-promise-27fc71e77261
++ https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-promise-27fc71e77261  
++ [video from flo](https://www.youtube.com/playlist?list=PL4cUxeGkcC9jAhrjtZ9U93UMIhnCc44MH)

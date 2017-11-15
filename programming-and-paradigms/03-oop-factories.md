@@ -87,28 +87,30 @@ Some benefits to using these patterns:
 * _Composition_ is a technique for creating new objects by combining two or more objects inside of a pure function.  In go two or more objects, out comes a new object with all the old objects' properties copied into it. The new object is in no way connected to the factory, it's '\_\_proto\_\_' points to the default 'Object.prototype'.  
 * This design pattern combines incoming objects with a predetermined set of properties, 'extending' the original object to include a new set of superpowers:
     ```js
-    function spiderify_1(arg_obj) {
-        var spider = {
-            spider: true
+    // are these pure functions?
+    
+    function butterify_1(arg_obj) {
+        var butter = {
+            butter: true
         };
-        return Object.assign(arg_obj, spider);
+        return Object.assign(arg_obj, butter);
     };
     
-    function spiderify_2(arg_obj) {
-        return Object.assign(arg_obj, { spider: true });
+    function butterify_2(arg_obj) {
+        return Object.assign(arg_obj, { butter: true });
     };
     
-    function spiderify_3(arg_obj) {  // I think this one is the most readable
+    function butterify_3(arg_obj) {  
         var new_obj = Object.assign(arg_obj, {
-                    spider: true
+                    butter: true
                 });
         return new_obj;
     };
     
-    var pig = {
-        pig: true
+    var fly = {
+        fly: true
     };
-    var spiderpig = spiderify_3(pig);
+    var butterfly = butterify_3(fly);
     
     ```
     * Composed objects are more appropriate for functional programming than inheriting objects.  A composed object will always behave the same no matter what happens in the app (unless you change it directly). They are not susceptible to _side effects_ if their prototype object is modified or they are moved to a different context.  
@@ -129,7 +131,7 @@ Some benefits to using these patterns:
     ```js
         function n_adic_composer() {
             var new_obj = {};
-            for (var object of arguments) {
+            for (var object in arguments) {
                 new_obj = Object.assign(new_obj, arguments[object]);
             };
             return new_obj;
@@ -168,7 +170,8 @@ ___
 * [another way of composing](https://gist.github.com/Jiert/efa5a30200d1ebb62122)
 * [configurable facotry](http://dealwithjs.io/design-patterns-the-factory-pattern-in-javascript/)
 * [Mr. Funfunfunction on factories](https://www.youtube.com/watch?v=ImwrezYhw4w)
-* [A nice article](https://atendesigngroup.com/blog/factory-functions-javascript)
+* [A nice article](https://atendesigngroup.com/blog/factory-functions-javascript)  
+* [js.info](https://javascript.info/object#copying-by-reference)
 
 [TOP](#factories-and-composition)
 ___

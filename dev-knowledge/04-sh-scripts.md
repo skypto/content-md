@@ -25,7 +25,8 @@ Making shell scripts is silly easy:
 To execute a shell script simply navigate to it's directory from terminal, type the file name including extension, and hit enter.  Voila.
 
 ___
-### Resources
+### Resources  
+* [build little programs](https://developer.atlassian.com/blog/2015/11/scripting-with-node/)  
 * [Tutorialesque](https://lifehacker.com/5743814/become-a-command-line-ninja-with-these-time-saving-shortcuts) guide to being effective in terminal.
 * [Interactive website](http://explainshell.com) that explains the meaning of any shell command, including git commands.
 * [Organized list](https://www.tjhsst.edu/~dhyatt/superap/unixcmd.html) of the most useful bash commands.
